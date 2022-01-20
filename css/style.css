@@ -82,6 +82,9 @@ table {
   font: 12px/1 "arial";
   color: #999;
 }
+#header .inner .menuWeb .util li a:hover {
+  color: #000;
+}
 #header .inner .menuWeb .util li a img {
   width: 14px;
   height: 14px;
@@ -90,13 +93,23 @@ table {
 #visual {
   width: 100%;
   height: calc(100vh - 157px);
-  border: 1px solid blue;
 }
 #visual .inner {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
+}
+#visual .inner::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #7fb685;
+  position: absolute;
+  top: 467px;
+  left: 244px;
+  z-index: -2;
 }
 #visual .inner .txt {
   width: 486px;
@@ -125,21 +138,18 @@ table {
   z-index: -1;
   overflow: hidden;
 }
-#visual .inner .pic img {
+#visual .inner .pic .swiper-wrapper {
   width: 880px;
   height: 565px;
-  object-fit: cover;
 }
-#visual .inner .pic::before {
-  content: "";
-  display: block;
-  width: 110px;
-  height: 110px;
-  border: 5px solid #7fb685;
-  position: absolute;
-  bottom: 0;
-  left: -28px;
-  z-index: -2;
+#visual .inner .pic .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+#visual .inner .pic .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #visual .inner .pic::after {
   content: "\f063";
@@ -156,13 +166,13 @@ table {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 2;
 }
 
 #list {
   width: 100%;
   padding-top: 133px;
   padding-bottom: 157px;
-  border: 1px solid red;
 }
 #list .inner {
   width: 1180px;
@@ -241,11 +251,28 @@ table {
   margin: 0 auto;
   position: relative;
 }
+#co .inner .pic {
+  width: 45%;
+  height: 100%;
+  float: left;
+  border: 1px solid red;
+}
+#co .inner .txt {
+  width: 45%;
+  height: 100%;
+  float: right;
+  border: 1px solid red;
+}
+#co .inner .txt h1 {
+  font: bold 40px/45px "arial";
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 100px;
+}
 
 #con {
   width: 100%;
   padding: 80px 0;
-  border: 1px solid #801111;
 }
 #con .inner {
   width: 1180px;
@@ -321,8 +348,18 @@ table {
   width: 45%;
   height: 100%;
   float: right;
-  border: 1px solid green;
 }
+#con .inner .pic video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s;
+}
+#con .inner .pic video:hover {
+  opacity: 0.6;
+}
+
 #say {
   width: 100%;
   padding: 80px 0;
@@ -375,9 +412,9 @@ table {
 #say .inner .wrap article:last-of-type {
   margin-right: 0px;
 }
-#say .inner .wrap article img {
-  width: 50px;
-  height: 50px;
+#say .inner .wrap article i {
+  font-size: 55px;
+  color: #fff;
   margin-bottom: 40px;
 }
 #say .inner .wrap article h2 {
@@ -408,6 +445,62 @@ table {
 }
 #say .inner .wrap article .peo > p span {
   font: bold 16px/1 "arial";
+}
+
+#sub {
+  width: 100%;
+  padding: 80px 100px;
+  border: 1px solid pink;
+}
+#sub .inner {
+  width: 1180px;
+  height: 270px;
+  margin: 0 auto;
+  position: relative;
+}
+#sub .inner h1 {
+  font: bold 40px/60px "arial";
+  letter-spacing: 1px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#sub .inner p {
+  font: 15px/28px "arial";
+  color: #777;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#sub .inner .searchBox {
+  width: 700px;
+  height: 80px;
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+#sub .inner .searchBox input[type=text] {
+  width: 460px;
+  height: 60px;
+  font: bold 16px/22px "arial";
+  color: #333;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  border: none;
+}
+#sub .inner .searchBox .btnSearch {
+  width: 200px;
+  height: 60px;
+  font: bold 16px/22px "arial";
+  text-align: center;
+  color: #ccc;
+  background: #7fb685;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 #footer {

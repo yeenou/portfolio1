@@ -17,10 +17,10 @@
 
             <nav class="menuWeb">
                 <ul id="gnb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contacts">Contacts</a></li>
                 </ul>
 
                 <ul class="util">
@@ -41,11 +41,12 @@
             <div class="pic">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="img/img1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img2.jpg" alt=""></div>
-                </div>
-                <div class="swiper-button-next"></div>
+                    <!-- <div class="swiper-slide"><img src="img/img2.jpg" alt=""></div> -->
+                </div> 
+                <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+
+                <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </figure>
@@ -87,7 +88,16 @@
     </section>
 
     <section id="co">
-        <div class="inner"></div>
+        <div class="inner">
+            <div class="pic">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="txt">
+                <h1>We provide the best <br> 
+                    process experience</h1>
+            </div>
+        </div>
     </section>
 
     <section id="con">
@@ -120,7 +130,7 @@
                 </div>
             </div>
             <div class="pic">
-                <img src="" alt=""> 
+                <video src="img/video1.mp4" autoplay loop muted ></video>
             </div>
         </div>
     </section>
@@ -135,7 +145,7 @@
             </div>
             <div class="wrap">
                 <article>
-                    <img src="img/quotes.png" alt="quote">
+                    <i class="fas fa-quote-left"></i>
                     <h2>The results given are very <br> 
                         satisfying</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eius officiis iusto maxime aliquam voluptatem nam voluptatibus culpa obchfcati modi, incidunt, earum neque animi vero!</p>
@@ -146,7 +156,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="img/quotes.png" alt="quote">
+                    <i class="fas fa-quote-left"></i>
                     <h2>The service provided is very <br> 
                         good and friendly</h2>
                     <p>Lorem ipsum dolor sit amet elit. Laboriosam eum repellendus sint dolorem ipsa facere esse? Velit nobis aut hic rem veniam quod harum. Ducimus illo ut molestiae expedit asint dolorem?</p>
@@ -158,6 +168,21 @@
                 </article>
             </div>
         </div>
+    </section>
+
+    <section id="sub">
+        <div class="inner">
+            <h1>Subscribe to get the latest <br>
+                news about us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iusto eligendi iste,  <br>
+                vero commodi et nisi quis ipsam aspernatur consequatur?</p>
+
+            <div class="searchBox">
+                <input type="text" id="search" placeholder="Enter your email adress">
+                <button class="btnSearch">Subscribe</button>
+            </div>
+        </div>
+
     </section>
 
     <footer id="footer">
@@ -204,19 +229,26 @@
     </footer>
 
 
-
+<!-- 
 <script>
     var swiper = new Swiper(".mySwiper", {
+
         pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        },
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            
+            mousewheel: true,
+            keyboard: {
+            enabled: true,
+            },            
+
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
         },
     });
-</script>
+</script> -->
 
 
 
