@@ -3,12 +3,16 @@
 
 @import "reset.scss";
 @import "sub_layout.scss"; 
+@import "department.scss"; 
+@import "community.scss"; 
+@import "gallery.scss"; 
+@import "join.scss"; 
+@import "location.scss"; 
+@import "youtube.scss"; 
 
 
 #header{
     width:100%;
-
-    border:1px solid red;
 
     .inner{
         width:1180px; //
@@ -40,7 +44,11 @@
 						padding: 16px 40px;
 						font: bold 14px/1 "arial";
 						color: #777;
+                        transition:0.5s;
 
+                        &:hover {
+                            color:#000;
+						}
 					}
 				}
 			}
@@ -89,7 +97,7 @@
             width:486px; //
             height:330px; //
             padding:45px 90px; //
-            background:khaki;
+            background:#7fb685;
             position:absolute; top: 110px; left: 0; //
 
             h1{
@@ -99,7 +107,7 @@
             }
             p{
                 font:bold 16px/20px 'arial';
-                color:#fff;
+                color:#ccc;
             }
         }
         .pic{
@@ -107,20 +115,21 @@
             height:588px; //
             position:absolute; top:0; right:0; //
             z-index:-1;
+            overflow: hidden;
+
 
             img{
                 width:880px; //
                 height:565px; //
+                object-fit: cover;
 
-
-                border:1px solid orange;
             }
 
             &::before{
                 content: ''; display:block; 
                 width:110px; //
                 height:110px; //
-                border:5px solid khaki;
+                border:5px solid #7fb685;
                 position:absolute; bottom:0; left:-28px; //
                 z-index:-2;
             }
@@ -136,7 +145,7 @@
                 display:block; 
                 width:125px; //
                 height:110px; //
-                background:khaki;
+                background:#7fb685;
                 position:absolute; bottom:0; right:0;
             }
         }
@@ -158,7 +167,7 @@
             content: ''; display:block; 
             width:110px; //
             height:5px; //
-            background:khaki;
+            background:#7fb685;
             position:absolute; top:45px; left:0;
         }
 
@@ -267,7 +276,7 @@
                     span{
                         display:block; 
                         width:55px; height:55px; // 
-                        background:khaki; 
+                        background:#7fb685; 
                         font:bold 18px/55px 'arial'; 
                         color:#fff; 
                         text-align:center; 
@@ -279,7 +288,7 @@
                             content:''; display:block; 
                             width:5px;  
                             height:94px; // 
-                            background:#aaa; 
+                            background:#eee; 
                             position:absolute; top:70px; left:25px; 
                         }
 
@@ -349,26 +358,23 @@
             margin-bottom:90px; //
         }
 
-        &::before{
-            display:block; 
-            content: '\f060';
-            font-family:"Font Awesome 5 Free"; 
-            font-weight:900; 
-            font-size:30px;
-            color:khaki;
-            position:absolute; top:36px; right:75px;
-            opacity:0.6;
-        }
-
-        &::after{
-            display:block; 
-            content: '\f061';
-            font-family:"Font Awesome 5 Free"; 
-            font-weight:900;
-            font-size:30px;
-            color:khaki;
-            position:absolute; top:36px; right:0;
-            opacity:0.6;
+        .arrow{
+            .left{
+                position:absolute; top:36px; right:75px;
+                i{
+                    font-size:30px;
+                    color:#7fb685;
+                    opacity:0.6;
+                }
+            }
+            .right{
+                position:absolute; top:36px; right:0;
+                i{
+                    font-size:30px;
+                    color:#7fb685;
+                    opacity:0.6;
+                }
+            }
         }
 
         .wrap{
@@ -381,7 +387,7 @@
                 margin-right:20px;
                 float:left;
                 padding:47px;
-                background:khaki;
+                background:#7fb685;
 
                 &:last-of-type {
                     margin-right: 0px;
@@ -394,12 +400,12 @@
                 }
                 h2{
                     font: bold 25px/36px "arial";
-                    color: #555;
+                    color: #eee;
                     margin-bottom: 36px;
                 }
                 p{
                     font: 15px/22px "arial";
-                    color: #777;
+                    color: #eee;
                     margin-bottom:36px;
                 }
 
@@ -417,7 +423,7 @@
                     }
                     >p{
                         font:12px/26px "arial";
-                        color: #777;
+                        color: #eee;
                         float:left;
 
                         span{
@@ -432,19 +438,66 @@
 
 #footer{
     width:100%;
-    border:1px solid red;
+    padding:117px 0 78px 0;
+    background:#7fb685;
 
     .inner{
         width:1180px; //
-        height:392px; // 
+        height:200px; // 
         margin:0 auto;
         position:relative;
+
+        display:flex;
+        justify-content:space-between;
+
+        .wrap{
+            width:40%;
+            height:100%;
+            padding-right:10%;
+
+            h1{
+                font: bold 25px/1 "arial";
+                color: #fff;
+                margin-bottom: 38px;
+            }
+    
+            p{
+                font: 15px/25px "arial";
+                color: #ccc;
+            }
+        }
+
+        ul{ 
+            p{
+                font: bold 22px/1 "arial";
+                color: #fff;
+                margin-bottom: 28px;
+            }
+
+            li{
+                a{
+                    font: 15px/30px "arial";
+                    color: #ccc;
+                }
+            }
+
+            .sns{
+                a{
+                    i{
+                        font-size:20px;
+                        color: #fff;
+                        margin-top:47px;
+                        margin-right:14px;
+                    }
+                }
+            }
+        }
     }
 
-
-    h1{
-        pppp
-    }
 }
 
 
+// fcaf58 오렌지
+// fce694 - buff
+// 307351 - 녹색
+// 307351 - dark sea green

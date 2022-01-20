@@ -1,17 +1,456 @@
-/* Error: expected "{".
- *     ,
- * 446 |         pppp
- *     |             ^
- *     '
- *   scss\style.scss 446:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 446 \2502          pppp\d\a     \2502              ^\a     \2575 \a   scss\\style.scss 446:13  root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+
+.wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+fieldset {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#header {
+  width: 100%;
+}
+#header .inner {
+  width: 1180px;
+  height: 157px;
+  margin: 0 auto;
+  position: relative;
+}
+#header .inner > h1 {
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+#header .inner > h1 a {
+  font: bold 24px/1 "arial";
+  color: #444;
+  letter-spacing: 1px;
+}
+#header .inner .menuWeb #gnb {
+  position: absolute;
+  top: 45px;
+  right: 25%;
+}
+#header .inner .menuWeb #gnb li {
+  float: left;
+}
+#header .inner .menuWeb #gnb li a {
+  display: block;
+  padding: 16px 40px;
+  font: bold 14px/1 "arial";
+  color: #777;
+  transition: 0.5s;
+}
+#header .inner .menuWeb #gnb li a:hover {
+  color: #000;
+}
+#header .inner .menuWeb .util {
+  position: absolute;
+  top: 45px;
+  right: 30px;
+}
+#header .inner .menuWeb .util li {
+  float: left;
+  margin-left: 30px;
+}
+#header .inner .menuWeb .util li a {
+  font: 12px/1 "arial";
+  color: #999;
+}
+#header .inner .menuWeb .util li a img {
+  width: 14px;
+  height: 14px;
+}
+
+#visual {
+  width: 100%;
+  height: calc(100vh - 157px);
+  border: 1px solid blue;
+}
+#visual .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#visual .inner .txt {
+  width: 486px;
+  height: 330px;
+  padding: 45px 90px;
+  background: #7fb685;
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+#visual .inner .txt h1 {
+  font: bold 36px/50px "arial";
+  color: #fff;
+  margin-bottom: 30px;
+}
+#visual .inner .txt p {
+  font: bold 16px/20px "arial";
+  color: #ccc;
+}
+#visual .inner .pic {
+  width: 910px;
+  height: 588px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+#visual .inner .pic img {
+  width: 880px;
+  height: 565px;
+  object-fit: cover;
+}
+#visual .inner .pic::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #7fb685;
+  position: absolute;
+  bottom: 0;
+  left: -28px;
+  z-index: -2;
+}
+#visual .inner .pic::after {
+  content: "\f063";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 110px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  width: 125px;
+  height: 110px;
+  background: #7fb685;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#list {
+  width: 100%;
+  padding-top: 133px;
+  padding-bottom: 157px;
+  border: 1px solid red;
+}
+#list .inner {
+  width: 1180px;
+  height: 338px;
+  margin: 0 auto;
+  position: relative;
+}
+#list .inner::after {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 5px;
+  background: #7fb685;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+#list .inner h1 {
+  width: 1020px;
+  float: right;
+  font: bold 40px/45px "arial";
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 110px;
+}
+#list .inner ul {
+  width: 100%;
+}
+#list .inner ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#list .inner ul li {
+  width: 380px;
+  height: 125px;
+  float: left;
+  margin-right: 20px;
+  padding: 0px 30px;
+}
+#list .inner ul li:last-of-type {
+  margin-right: 0px;
+}
+#list .inner ul li .pic {
+  width: 80px;
+  height: 100%;
+  float: left;
+  padding-right: 30px;
+}
+#list .inner ul li .pic img {
+  width: 50px;
+  height: 50px;
+}
+#list .inner ul li .txt {
+  width: 300px;
+  height: 100%;
+}
+#list .inner ul li .txt h2 {
+  font: bold 25px/1 "arial";
+  color: #555;
+  margin-bottom: 38px;
+}
+#list .inner ul li .txt p {
+  font: 15px/22px "arial";
+  color: #777;
+}
+
+#co {
+  width: 100%;
+  padding: 80px 0;
+  border: 1px solid red;
+}
+#co .inner {
+  width: 1180px;
+  height: 690px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#con {
+  width: 100%;
+  padding: 80px 0;
+  border: 1px solid #801111;
+}
+#con .inner {
+  width: 1180px;
+  height: 863px;
+  margin: 0 auto;
+  position: relative;
+}
+#con .inner .txt {
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+#con .inner .txt h1 {
+  font: bold 40px/45px "arial";
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 100px;
+}
+#con .inner .txt .or {
+  width: 85px;
+  height: 415px;
+  float: left;
+}
+#con .inner .txt .or li {
+  width: 100%;
+  height: 100%;
+}
+#con .inner .txt .or li span {
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: #7fb685;
+  font: bold 18px/55px "arial";
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 125px;
+  position: relative;
+}
+#con .inner .txt .or li span::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 94px;
+  background: #eee;
+  position: absolute;
+  top: 70px;
+  left: 25px;
+}
+#con .inner .txt .or li span:last-child::after {
+  display: none;
+}
+#con .inner .txt .wrap {
+  width: 446px;
+  height: 100%;
+  float: left;
+}
+#con .inner .txt .wrap article {
+  width: 100%;
+  height: 180px;
+  padding: 15px;
+}
+#con .inner .txt .wrap article h2 {
+  font: bold 25px/1 "arial";
+  color: #555;
+  margin-bottom: 38px;
+}
+#con .inner .txt .wrap article p {
+  font: 15px/22px "arial";
+  color: #777;
+}
+#con .inner .pic {
+  width: 45%;
+  height: 100%;
+  float: right;
+  border: 1px solid green;
+}
+#say {
+  width: 100%;
+  padding: 80px 0;
+  border: 1px solid pink;
+}
+#say .inner {
+  width: 1180px;
+  height: 590px;
+  margin: 0 auto;
+  position: relative;
+}
+#say .inner h1 {
+  font: bold 40px/45px "arial";
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 90px;
+}
+#say .inner .arrow .left {
+  position: absolute;
+  top: 36px;
+  right: 75px;
+}
+#say .inner .arrow .left i {
+  font-size: 30px;
+  color: #7fb685;
+  opacity: 0.6;
+}
+#say .inner .arrow .right {
+  position: absolute;
+  top: 36px;
+  right: 0;
+}
+#say .inner .arrow .right i {
+  font-size: 30px;
+  color: #7fb685;
+  opacity: 0.6;
+}
+#say .inner .wrap {
+  width: 100%;
+  height: 440px;
+}
+#say .inner .wrap article {
+  width: 580px;
+  height: 100%;
+  margin-right: 20px;
+  float: left;
+  padding: 47px;
+  background: #7fb685;
+}
+#say .inner .wrap article:last-of-type {
+  margin-right: 0px;
+}
+#say .inner .wrap article img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+#say .inner .wrap article h2 {
+  font: bold 25px/36px "arial";
+  color: #eee;
+  margin-bottom: 36px;
+}
+#say .inner .wrap article p {
+  font: 15px/22px "arial";
+  color: #eee;
+  margin-bottom: 36px;
+}
+#say .inner .wrap article .peo {
+  width: 100%;
+  height: 55px;
+}
+#say .inner .wrap article .peo img {
+  width: 55px;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 16px;
+  float: left;
+}
+#say .inner .wrap article .peo > p {
+  font: 12px/26px "arial";
+  color: #eee;
+  float: left;
+}
+#say .inner .wrap article .peo > p span {
+  font: bold 16px/1 "arial";
+}
+
+#footer {
+  width: 100%;
+  padding: 117px 0 78px 0;
+  background: #7fb685;
+}
+#footer .inner {
+  width: 1180px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .inner .wrap {
+  width: 40%;
+  height: 100%;
+  padding-right: 10%;
+}
+#footer .inner .wrap h1 {
+  font: bold 25px/1 "arial";
+  color: #fff;
+  margin-bottom: 38px;
+}
+#footer .inner .wrap p {
+  font: 15px/25px "arial";
+  color: #ccc;
+}
+#footer .inner ul p {
+  font: bold 22px/1 "arial";
+  color: #fff;
+  margin-bottom: 28px;
+}
+#footer .inner ul li a {
+  font: 15px/30px "arial";
+  color: #ccc;
+}
+#footer .inner ul .sns a i {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 47px;
+  margin-right: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
