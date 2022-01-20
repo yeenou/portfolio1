@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
 
 @import "reset.scss";
 @import "sub_layout.scss"; 
@@ -23,7 +25,7 @@
             position:absolute; top:45px; left:0; //
 
             a {
-				font: bold 24px/1 "arial";
+				font: bold 24px/1 "Poppins";
 				color: #444;
                 letter-spacing:1px;
 			}
@@ -41,7 +43,7 @@
 					a {
 						display: block;
 						padding: 16px 40px;
-						font: bold 14px/1 "arial";
+						font: bold 14px/1 "Poppins";
 						color: #777;
                         transition:0.5s;
 
@@ -54,7 +56,7 @@
 
             .util {
 				position: absolute;
-				top: 45px; //
+				top: 37px; //
 				right: 30px; //
 
 				li {
@@ -62,7 +64,9 @@
 					margin-left: 30px;
 
 					a {
-						font: 12px/1 "arial";
+                        display: block;
+						padding: 16px 0;
+						font: 14px/2 "Poppins";
 						color: #999;
 
                         &:hover {
@@ -109,13 +113,13 @@
             position:absolute; top: 110px; left: 0; //
 
             h1{
-                font:bold 36px/50px 'arial';
+                font:bold 36px/50px 'Poppins';
                 color:#fff;
                 margin-bottom:30px;
             }
             p{
-                font:bold 16px/20px 'arial';
-                color:#ccc;
+                font:16px/20px 'Poppins';
+                color:#eee;
             }
         }
         .pic{
@@ -192,7 +196,7 @@
         h1{
             width:1020px;
             float:right;
-            font:bold 40px/45px 'arial';
+            font:bold 40px/45px 'Poppins';
             letter-spacing:1px;
             color:#333;
             margin-bottom:110px; //
@@ -230,12 +234,12 @@
                     height:100%;
 
                     h2{
-                        font: bold 25px/1 "arial";
+                        font: bold 25px/1 "Poppins";
                         color: #555;
                         margin-bottom: 38px;
                     }
                     p{
-                        font: 15px/22px "arial";
+                        font: 15px/22px "Poppins";
                         color: #777;
                     }
                 }
@@ -248,7 +252,6 @@
 #co{
     width:100%;
     padding: 80px 0;
-    border:1px solid red;
 
     .inner{
         width:1180px; //
@@ -260,23 +263,31 @@
             width:45%;
             height:100%;
             float:left;
+            overflow: hidden;
 
-
-            border:1px solid red;
+            img{
+                width:100%; 
+                height:100%;
+                object-fit: cover;
+            }
         }
 
         .txt{
             width:45%;
             height:100%;
             float:right;
+            padding:100px 0;
 
-            border:1px solid red;
 
             h1{
-                font:bold 40px/45px 'arial';
+                font:bold 40px/45px 'Poppins';
                 letter-spacing:1px;
                 color:#333;
-                margin-bottom:100px;
+                margin-bottom:38px;
+            }
+            p{
+                font: 15px/22px "Poppins";
+                color: #777;
             }
         }
 
@@ -299,7 +310,7 @@
             float:left;
 
             h1{
-                font:bold 40px/45px 'arial';
+                font:bold 40px/45px 'Poppins';
                 letter-spacing:1px;
                 color:#333;
                 margin-bottom:100px;
@@ -318,7 +329,7 @@
                         display:block; 
                         width:55px; height:55px; // 
                         background:#7fb685; 
-                        font:bold 18px/55px 'arial'; 
+                        font:bold 18px/55px 'Poppins'; 
                         color:#fff; 
                         text-align:center; 
                         border-radius:50%; 
@@ -351,12 +362,12 @@
                     padding:15px;
 
                     h2{
-                        font: bold 25px/1 "arial";
+                        font: bold 25px/1 "Poppins";
                         color: #555;
                         margin-bottom: 38px;
                     }
                     p{
-                        font: 15px/22px "arial";
+                        font: 15px/22px "Poppins";
                         color: #777;
                     }
                 }
@@ -395,7 +406,7 @@
         position:relative;
 
         h1{
-            font:bold 40px/45px 'arial';
+            font:bold 40px/45px 'Poppins';
             letter-spacing:1px;
             color:#333;
             margin-bottom:90px; //
@@ -431,6 +442,7 @@
                 float:left;
                 padding:47px;
                 background:#7fb685;
+                //position:relative;
 
                 &:last-of-type {
                     margin-right: 0px;
@@ -443,35 +455,35 @@
                 }
 
                 h2{
-                    font: bold 25px/36px "arial";
+                    font: 25px/36px "Poppins";
                     color: #eee;
                     margin-bottom: 36px;
                 }
                 p{
-                    font: 15px/22px "arial";
+                    font: 15px/22px "Poppins";
                     color: #eee;
                     margin-bottom:36px;
                 }
 
                 .peo{
-                    width:100%;
+                    width:486px;
                     height:55px;
+                    position:absolute; bottom:0;
 
                     img{
                         width:55px;
                         height:100%;
-
                         border-radius:50%;
                         margin-right:16px;
                         float:left;
                     }
                     >p{
-                        font:12px/26px "arial";
+                        font:12px/22px "Poppins";
                         color: #eee;
                         float:left;
 
                         span{
-                            font:bold 16px/1 "arial";
+                            font:16px/1 "Poppins";
                         }
                     }
                 }
@@ -493,14 +505,14 @@
         position:relative;
 
         h1{
-            font:bold 40px/60px 'arial';
+            font:bold 40px/60px 'Poppins';
             letter-spacing:1px;
             color:#333;
             text-align:center;
             margin-bottom:40px; //
         }
         p{
-            font: 15px/28px "arial";
+            font: 15px/28px "Poppins";
             color: #777;
             text-align:center;
             margin-bottom:40px; //
@@ -517,7 +529,7 @@
             input[type=text]{
                 width:460px;
                 height:60px;
-                font:bold 16px/22px "arial";
+                font:bold 16px/22px "Poppins";
                 color:#333;
                 letter-spacing:1px;
                 padding-left:10px; 
@@ -527,9 +539,9 @@
             .btnSearch{
                 width:200px;
                 height:60px;
-                font:bold 16px/22px "arial";
+                font:16px/22px "Poppins";
                 text-align:center; 
-                color:#ccc;
+                color:#eee;
                 background:#7fb685;
                 margin-left:10px;
                 border:none;
@@ -559,28 +571,28 @@
             padding-right:10%;
 
             h1{
-                font: bold 25px/1 "arial";
+                font: bold 25px/1 "Poppins";
                 color: #fff;
                 margin-bottom: 38px;
             }
     
             p{
-                font: 15px/25px "arial";
-                color: #ccc;
+                font: 15px/25px "Poppins";
+                color: #ddd;
             }
         }
 
         ul{ 
             p{
-                font: bold 22px/1 "arial";
+                font:22px/1 "Poppins";
                 color: #fff;
                 margin-bottom: 28px;
             }
 
             li{
                 a{
-                    font: 15px/30px "arial";
-                    color: #ccc;
+                    font: 15px/30px "Poppins";
+                    color: #ddd;
                 }
             }
 
@@ -603,4 +615,4 @@
 // fcaf58 오렌지
 // fce694 - buff
 // 307351 - 녹색
-// 307351 - dark sea green
+// 7fb685 - dark sea green
