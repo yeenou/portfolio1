@@ -9,7 +9,7 @@
 @import "contacts.scss"; 
 @import "join.scss"; 
 @import "location.scss"; 
-@import "features.scss"; 
+@import "gallery.scss"; 
 
 
 #header{
@@ -204,15 +204,14 @@
 
         ul{
             width:100%;
+            display:flex; justify-content:center;
 
-            li::after{ content:''; display:block; clear:both; } 
+            //li::after{ content:''; display:block; clear:both; } 
 
             li{
                 width:380px;
                 height:125px; //
-                float:left;
                 margin-right:20px;
-                padding:0px 30px;
 
                 &:last-of-type {
                     margin-right: 0px;
@@ -232,6 +231,7 @@
                 .txt{
                     width:300px;
                     height:100%;
+                    float:left;
 
                     h2{
                         font: bold 25px/1 "Poppins";
@@ -243,8 +243,11 @@
                         color: #777;
                     }
                 }
+
+                &:hover{
+                    //box-shadow:;
+                }
             }
-            
         }
     }
 }
@@ -303,11 +306,11 @@
         height:863px; // 
         margin:0 auto;
         position:relative;
+        display:flex; justify-content:space-between;
 
         .txt{
             width:45%;
             height:100%;
-            float:left;
 
             h1{
                 font:bold 40px/45px 'Poppins';
@@ -377,7 +380,6 @@
         .pic{
             width:45%;
             height:100%;
-            float:right;
 
             video{
                 width:100%;
@@ -397,7 +399,6 @@
 #say{
     width:100%;
     padding: 80px 0;
-    border:1px solid pink;
 
     .inner{
         width:1180px; //
@@ -495,7 +496,6 @@
 #sub{
     width:100%;
     padding:80px 100px;
-    border:1px solid pink;
 
     .inner{
         width:1180px; //
