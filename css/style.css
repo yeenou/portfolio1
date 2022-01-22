@@ -54,8 +54,8 @@ table {
 }
 #header_sub .inner .menuWeb #gnb {
   position: absolute;
-  top: 45px;
-  right: 25%;
+  top: 48px;
+  right: 15.5%;
 }
 #header_sub .inner .menuWeb #gnb li {
   float: left;
@@ -72,7 +72,7 @@ table {
 }
 #header_sub .inner .menuWeb .util {
   position: absolute;
-  top: 37px;
+  top: 40px;
   right: 30px;
 }
 #header_sub .inner .menuWeb .util li {
@@ -172,8 +172,8 @@ table {
 }
 #header .inner .menuWeb #gnb {
   position: absolute;
-  top: 45px;
-  right: 25%;
+  top: 48px;
+  right: 15.5%;
 }
 #header .inner .menuWeb #gnb li {
   float: left;
@@ -190,7 +190,7 @@ table {
 }
 #header .inner .menuWeb .util {
   position: absolute;
-  top: 37px;
+  top: 40px;
   right: 30px;
 }
 #header .inner .menuWeb .util li {

@@ -5,11 +5,12 @@
 
 @import "reset.scss";
 @import "sub_layout.scss"; 
-@import "about.scss"; 
-@import "contacts.scss"; 
+@import "department.scss"; 
+@import "community.scss"; 
+@import "gallery.scss"; 
 @import "join.scss"; 
 @import "location.scss"; 
-@import "gallery.scss"; 
+@import "youtube.scss"; 
 
 
 #header{
@@ -34,8 +35,8 @@
         .menuWeb{
 			#gnb{
                 position: absolute;
-                top: 45px; //
-				right: 25%;
+                top: 48px; //
+				right: 15.5%;
                 
                 li {
 					float: left;
@@ -56,7 +57,7 @@
 
             .util {
 				position: absolute;
-				top: 37px; //
+				top: 40px; //
 				right: 30px; //
 
 				li {
