@@ -385,7 +385,7 @@ table {
   */
 }
 #slide .swiper-wrapper .swiper-slide {
-  width: 45%;
+  width: 450px;
   height: 100%;
   display: flex;
   overflow: hidden;
