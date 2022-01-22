@@ -43,23 +43,22 @@
                 <p>We will help you to make an elegant and luxurious interior designed by professianml interior designers</p>
             </div>
             <div class="pic">
+
+                <!-- visual 프레임 -->
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/main2.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/main3.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/main4.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/main5.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/main6.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main7.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main8.jpg" alt=""></div>
 
-
-                    
                 </div> 
-                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
 
-                <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </figure>
@@ -102,8 +101,7 @@
 
     <section id="slide">
 
-
-        <!-- 슬라이드 프레임 -->
+        <!-- slide 프레임 -->
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -159,10 +157,8 @@
 
 
         </div>
-
-        <div class="swiper-pagination"></div>
-
-
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
     </section>
 
@@ -295,50 +291,43 @@
     </footer>
 
 
-<!-- 
+<!-- visual swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper", {
-
-        pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-            
-            mousewheel: true,
-            keyboard: {
-            enabled: true,
-            },            
-
+    var swiper = new Swiper("#visual", {
+        spaceBetween: 30,
+        effect: "fade",
         navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
     });
-</script> -->
+  </script>
 
 
-
-
+<!-- slide swiper -->
 <script>
     var swiper = new Swiper("#slide", {
         slidesPerView: 4,
-        centeredSlides: true,
-        //spaceBetween: 0,
+        //centeredSlides: true,
+        loop: true,
+        spaceBetween: 30,
         grabCursor : true, 
 
         autoplay :{
-        delay : 1000, 
-        disableOnInteraction : true, 
+            delay : 1000, 
+            disableOnInteraction : true, 
         },
-      
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
     });
 </script>
-
-
 
 
 </body>

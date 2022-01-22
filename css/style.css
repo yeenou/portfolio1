@@ -240,6 +240,7 @@ table {
   position: absolute;
   top: 110px;
   left: 0;
+  z-index: 5;
 }
 #visual .inner .txt h1 {
   font: bold 36px/50px "Poppins";
@@ -256,21 +257,23 @@ table {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
-  overflow: hidden;
+  z-index: 0;
 }
 #visual .inner .pic .swiper-wrapper {
   width: 880px;
   height: 565px;
+  position: relative;
 }
 #visual .inner .pic .swiper-wrapper .swiper-slide {
   width: 100%;
   height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 #visual .inner .pic .swiper-wrapper .swiper-slide img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 #visual .inner .pic::after {
   content: "\f063";
@@ -287,7 +290,7 @@ table {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 #list {
@@ -359,6 +362,7 @@ table {
 #slide {
   width: 100%;
   padding: 80px 0;
+  position: relative;
 }
 #slide .swiper-wrapper {
   width: 1180px;
@@ -391,6 +395,7 @@ table {
   overflow: hidden;
 }
 #slide .swiper-wrapper .swiper-slide img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -400,6 +405,17 @@ table {
 }
 #slide .swiper-wrapper .swiper-slide p {
   display: none;
+}
+#slide .swiper-button-prev {
+  left: auto;
+  top: auto;
+  right: 100px;
+  bottom: 50px;
+}
+#slide .swiper-button-next {
+  top: auto;
+  right: 60px;
+  bottom: 50px;
 }
 
 #con {
