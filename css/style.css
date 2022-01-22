@@ -365,6 +365,24 @@ table {
   height: 690px;
   margin: 0 auto;
   position: relative;
+  /*
+  .txt{
+      width:45%;
+      height:100%;
+      float:right;
+      padding:100px 0;
+      h1{
+          font:bold 40px/45px 'Poppins';
+          letter-spacing:1px;
+          color:#333;
+          margin-bottom:38px;
+      }
+      p{
+          font: 15px/22px "Poppins";
+          color: #777;
+      }
+  }
+  */
 }
 #co .inner .pic {
   width: 45%;
@@ -376,22 +394,6 @@ table {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-#co .inner .txt {
-  width: 45%;
-  height: 100%;
-  float: right;
-  padding: 100px 0;
-}
-#co .inner .txt h1 {
-  font: bold 40px/45px "Poppins";
-  letter-spacing: 1px;
-  color: #333;
-  margin-bottom: 38px;
-}
-#co .inner .txt p {
-  font: 15px/22px "Poppins";
-  color: #777;
 }
 
 #con {
