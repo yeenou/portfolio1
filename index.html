@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio 조예은</title>
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
@@ -89,18 +91,70 @@
         </div>
     </section>
 
-    <section id="co">
-        <div class="inner">
-            <div class="pic">
-                <img src="img/img2.jpg" alt="">
-                <img src="" alt="">
+    <section id="slide">
+
+
+        <!-- 슬라이드 프레임 -->
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="inner">
+                    <img src="img/slide1.jpg" alt="">
+                    <h2>Lorem ipsum.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
             </div>
-            <!-- <div class="txt">
-                <h1>We provide the best <br> 
-                    process experience</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod codfblfjkrnkkdmkd rrupti modi nulla odio dolore aut asperiores saepe ipsdum sit amet consectetur elit. Quod culpa? Iure!</p>
-            </div> -->
+            <div class="swiper-slide">
+                <div class="inner">
+                    <img src="img/slide2.jpg" alt="">
+                    <h2>Lorem ipsum.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <img src="img/slide3.jpg" alt="">
+                    <h2>Lorem ipsum.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <img src="img/slide4.jpg" alt="">
+                    <h2>Lorem ipsum.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <img src="img/slide5.jpg" alt="">
+                    <h2>Lorem ipsum.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <img src="img/slide6.jpg" alt="">
+                    <h2>Lorem ipsum.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <img src="img/slide7.jpg" alt="">
+                    <h2>Lorem ipsum.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+
+
+
         </div>
+
+        <div class="swiper-pagination"></div>
+
+
+
     </section>
 
     <section id="con">
@@ -256,7 +310,24 @@
 
 
 
+<script>
+    var swiper = new Swiper("#slide", {
+        slidesPerView: 4,
+        centeredSlides: true,
+        spaceBetween: 0,
+        grabCursor : true, 
 
+        autoplay :{
+        delay : 1000, 
+        disableOnInteraction : true, 
+        },
+      
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    });
+</script>
 
 
 
