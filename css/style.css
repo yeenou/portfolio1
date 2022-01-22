@@ -385,8 +385,10 @@ table {
   */
 }
 #slide .swiper-wrapper .swiper-slide {
-  width: 380px;
+  width: 400px;
   height: 100%;
+  display: flex;
+  overflow: hidden;
 }
 #slide .swiper-wrapper .swiper-slide img {
   width: 100%;
