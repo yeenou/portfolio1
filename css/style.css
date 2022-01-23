@@ -940,14 +940,14 @@ table {
     margin-bottom: 50px;
   }
   #con .inner .txt .or {
-    width: 70px;
+    width: 55px;
   }
   #con .inner .txt .or li span::after {
     background: #fff;
   }
   #con .inner .txt .wrap {
     position: absolute;
-    left: 100px;
+    left: 85px;
   }
   #con .inner .txt .wrap article h2 {
     color: #000;
