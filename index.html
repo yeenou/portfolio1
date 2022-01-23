@@ -33,6 +33,28 @@
                 </ul>
             </nav>
 
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a> 
+ 
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">DCODELAB</a>
+                    <span>UI/UX DEVELOPMENT INSTITUTE</span> 
+                </h1>
+ 
+                <ul id="gnbMo">
+                     <li><a href="department.html">DEPARTMENT</a></li>
+                     <li><a href="youtube.html">YOUTUBE</a></li>
+                     <li><a href="community.html">COMMUNITY</a></li>
+                     <li><a href="gallery.html">GALLERY</a></li>
+                     <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+
+
+
         </div>
     </header>
 
@@ -100,61 +122,49 @@
     </section>
 
     <section id="slide">
+        <div class="inner">
+            <h1>We provide the best <br> 
+                process experience</h1>
+        </div>
 
         <!-- slide 프레임 -->
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <div class="inner">
-                    <img src="img/slide1.jpg" alt="">
-                    <h2>Lorem ipsum.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
+                <img src="img/slide1.jpg" alt="">
+                <h2>Lorem ipsum.</h2>
+                <p>Lorem ipsum.</p>
             </div>
             <div class="swiper-slide">
-                <div class="inner">
-                    <img src="img/slide2.jpg" alt="">
-                    <h2>Lorem ipsum.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
+                <img src="img/slide2.jpg" alt="">
+                <h2>Lorem ipsum.</h2>
+                <p>Lorem ipsum.</p>
             </div>
             <div class="swiper-slide">
-                <div class="inner">
-                    <img src="img/slide3.jpg" alt="">
-                    <h2>Lorem ipsum.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
+                <img src="img/slide3.jpg" alt="">
+                <h2>Lorem ipsum.</h2>
+                <p>Lorem ipsum.</p>
             </div>
             <div class="swiper-slide">
-                <div class="inner">
-                    <img src="img/slide4.jpg" alt="">
-                    <h2>Lorem ipsum.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
+                <img src="img/slide4.jpg" alt="">
+                <h2>Lorem ipsum.</h2>
+                <p>Lorem ipsum.</p>
             </div>
             <div class="swiper-slide">
-                <div class="inner">
-                    <img src="img/slide5.jpg" alt="">
-                    <h2>Lorem ipsum.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
+                <img src="img/slide5.jpg" alt="">
+                <h2>Lorem ipsum.</h2>
+                <p>Lorem ipsum.</p>
             </div>
             <div class="swiper-slide">
-                <div class="inner">
-                    <img src="img/slide6.jpg" alt="">
-                    <h2>Lorem ipsum.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
+                <img src="img/slide6.jpg" alt="">
+                <h2>Lorem ipsum.</h2>
+                <p>Lorem ipsum.</p>
             </div>
             <div class="swiper-slide">
-                <div class="inner">
-                    <img src="img/slide7.jpg" alt="">
-                    <h2>Lorem ipsum.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
+                <img src="img/slide7.jpg" alt="">
+                <h2>Lorem ipsum.</h2>
+                <p>Lorem ipsum.</p>
             </div>
-
-
 
         </div>
         <div class="swiper-button-next"></div>
@@ -292,39 +302,64 @@
 
 
 <!-- visual swiper -->
-<script>
+<!-- <script>
     var swiper = new Swiper("#visual", {
+
+
         spaceBetween: 30,
         effect: "fade",
+
+
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
+
     });
-  </script>
+
+  </script> -->
+
+
+
+
+
+
+
+
+
 
 
 <!-- slide swiper -->
 <script>
     var swiper = new Swiper("#slide", {
-        slidesPerView: 4,
+        slidesPerView: 1,
         //centeredSlides: true,
-        loop: true,
+        //loop: true,
         spaceBetween: 30,
         grabCursor : true, 
 
-        autoplay :{
-            delay : 1000, 
-            disableOnInteraction : true, 
-        },
+        // autoplay :{
+        //     delay : 1000, 
+        //     disableOnInteraction : false, 
+        // },
 
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints:{
+            539:{ // 539px 이상?
+                slidesPerView: 2,
+            },
+            1179:{  // 1179xp 이상?
+                slidesPerView: 3.5,
+            },
         },
     });
 </script>
