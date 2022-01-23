@@ -1,5 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap");
+/*
+@mixin title($fontSize: 24px, $color: #555, $mb: 50px) {
+	font-weight: bold;
+	font-size: $fontSize;
+	font-family:arial;
+	color: $color;
+	text-align: center;
+	margin-bottom: $mb;
+}
+*/
 * {
   margin: 0;
   padding: 0;
@@ -100,7 +110,7 @@ table {
 .content .sub_visual {
   width: 100%;
   height: 250px;
-  background: #7fb685;
+  background: #6475F5;
   margin-bottom: 100px;
 }
 .content .inner {
@@ -111,7 +121,7 @@ table {
 #footer_sub {
   width: 100%;
   padding: 117px 0 80px 0;
-  background: #7fb685;
+  background: #6475F5;
 }
 #footer_sub .inner {
   width: 1180px;
@@ -154,12 +164,6 @@ table {
   margin-right: 14px;
 }
 
-.community .sub_visual {
-  width: 100%;
-  height: 250px;
-  background: #7fb685;
-  margin-bottom: 100px;
-}
 .community .inner table {
   width: 100%;
   border-bottom: 2px solid #111;
@@ -249,6 +253,63 @@ table {
 .community .inner .pagination .numbers a:hover {
   background: #666;
   color: #fff;
+}
+
+.location {
+  width: 100%;
+}
+.location #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+.location::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.location .traffic {
+  float: left;
+}
+.location .traffic li {
+  float: left;
+  margin-right: 20px;
+}
+.location .traffic li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .traffic li.on a {
+  background: #fff;
+  color: #333;
+}
+.location .branch {
+  float: right;
+}
+.location .branch li {
+  float: left;
+  margin-left: 10px;
+}
+.location .branch li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .branch li.on a {
+  background: #fff;
+  color: #333;
 }
 
 .vidList {
@@ -485,7 +546,7 @@ figure.pop .btnClose {
   display: block;
   width: 110px;
   height: 110px;
-  border: 5px solid #7fb685;
+  border: 5px solid #6475F5;
   position: absolute;
   top: 467px;
   left: 244px;
@@ -495,7 +556,7 @@ figure.pop .btnClose {
   width: 486px;
   height: 330px;
   padding: 45px 90px;
-  background: #7fb685;
+  background: #6475F5;
   position: absolute;
   top: 110px;
   left: 0;
@@ -558,7 +619,7 @@ figure.pop .btnClose {
   display: block;
   width: 125px;
   height: 110px;
-  background: #7fb685;
+  background: #6475F5;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -580,7 +641,7 @@ figure.pop .btnClose {
   display: block;
   width: 110px;
   height: 5px;
-  background: #7fb685;
+  background: #6475F5;
   position: absolute;
   top: 45px;
   left: 0;
@@ -751,7 +812,7 @@ figure.pop .btnClose {
   display: block;
   width: 55px;
   height: 55px;
-  background: #7fb685;
+  background: #6475F5;
   font: bold 18px/55px "Poppins";
   color: #fff;
   text-align: center;
@@ -829,7 +890,7 @@ figure.pop .btnClose {
 }
 #say .inner .arrow .left i {
   font-size: 30px;
-  color: #7fb685;
+  color: #6475F5;
   opacity: 0.6;
 }
 #say .inner .arrow .right {
@@ -839,7 +900,7 @@ figure.pop .btnClose {
 }
 #say .inner .arrow .right i {
   font-size: 30px;
-  color: #7fb685;
+  color: #6475F5;
   opacity: 0.6;
 }
 #say .inner .wrap {
@@ -852,7 +913,7 @@ figure.pop .btnClose {
   margin-right: 20px;
   float: left;
   padding: 47px;
-  background: #7fb685;
+  background: #6475F5;
 }
 #say .inner .wrap article:last-of-type {
   margin-right: 0px;
@@ -943,7 +1004,7 @@ figure.pop .btnClose {
   font: 16px/22px "Poppins";
   text-align: center;
   color: #eee;
-  background: #7fb685;
+  background: #6475F5;
   margin-left: 10px;
   border: none;
   cursor: pointer;
@@ -952,7 +1013,7 @@ figure.pop .btnClose {
 #footer {
   width: 100%;
   padding: 117px 0 80px 0;
-  background: #7fb685;
+  background: #6475F5;
 }
 #footer .inner {
   width: 1180px;
