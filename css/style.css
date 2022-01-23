@@ -802,16 +802,14 @@ table {
 
 #footer {
   width: 100%;
-  padding: 117px 0 78px 0;
+  padding: 117px 0 80px 0;
   background: #7fb685;
 }
 #footer .inner {
   width: 1180px;
-  height: 200px;
   margin: 0 auto;
   position: relative;
   display: flex;
-  justify-content: space-between;
 }
 #footer .inner .wrap {
   width: 40%;
@@ -827,16 +825,21 @@ table {
   font: 15px/25px "Poppins";
   color: #ddd;
 }
-#footer .inner ul p {
+#footer .inner .footerLi {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .inner .footerLi ul p {
   font: 22px/1 "Poppins";
   color: #fff;
   margin-bottom: 28px;
 }
-#footer .inner ul li a {
+#footer .inner .footerLi ul li a {
   font: 15px/30px "Poppins";
   color: #ddd;
 }
-#footer .inner ul .sns a i {
+#footer .inner .footerLi ul .sns a i {
   font-size: 20px;
   color: #fff;
   margin-top: 47px;
@@ -1041,27 +1044,26 @@ table {
   }
   #footer .inner {
     width: 100%;
-    height: 55vh;
-    flex-wrap: wrap;
+    display: block;
   }
   #footer .inner .wrap {
     width: 100%;
-    height: 15%;
-    padding-right: 0%;
+    height: 20%;
+    margin-bottom: 45px;
   }
   #footer .inner .wrap h1 {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
-  #footer .inner .wrap p {
-    display: none;
-  }
-  #footer .inner ul {
-    margin-bottom: 25px;
-  }
-  #footer .inner ul:last-child {
+  #footer .inner .footerLi {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #footer .inner .footerLi ul {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  #footer .inner .footerLi ul:last-child {
+    margin-right: 0;
   }
 }
 /*mobile -------------------------------------*/
