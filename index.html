@@ -309,24 +309,24 @@
 <script>
     var swiper = new Swiper(".visualSwiper", {
 
-        spaceBetween: 30,
+        //spaceBetween: 30,
         effect: "fade",
 
-        navigation: {
-            nextEl: ".visual-button-next",
-            prevEl: ".visual-button-prev",
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
         },
 
         pagination: {
             el: ".visual-pagination",
-            clickable: true,
+            type: "fraction",
         },
-
+        navigation: {
+              nextEl: ".visual-button-next",
+             prevEl: ".visual-button-prev",
+        },
     });
-  </script>  
-
-
-
+</script>  
 
 
 

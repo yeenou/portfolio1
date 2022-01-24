@@ -582,6 +582,32 @@ figure.pop .btnClose {
 #visual .inner .pic .swiper {
   width: 880px;
   height: 565px;
+  /*
+  .visual-button-next{
+      top:auto; right:60px; bottom:50px; 
+      //filter:grayscale(100%) brightness(3);
+  }
+  .visual-button-prev{
+      left:auto; top:auto; 
+      right:100px; bottom:50px; 
+      //filter:grayscale(100%) brightness(3);
+  }
+
+  //페이지네이션 
+  .visual-pagination{
+  //bottom:auto; left:auto; 
+  //top:50px; right:50px;
+  width:50px;
+  height:50px;  
+  font-size:16px; 
+  font-family:"Poppins"; 
+  //     color:#eee; 
+  letter-spacing:1px; 
+
+  z-index: 10;
+  }
+
+  */
 }
 #visual .inner .pic .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
@@ -593,19 +619,6 @@ figure.pop .btnClose {
   display: block;
   width: 100%;
   height: 100%;
-}
-#visual .inner .pic .visual-button-next {
-  top: auto;
-  right: 60px;
-  bottom: 50px;
-  filter: grayscale(100%) brightness(3);
-}
-#visual .inner .pic .visual-button-prev {
-  left: auto;
-  top: auto;
-  right: 100px;
-  bottom: 50px;
-  filter: grayscale(100%) brightness(3);
 }
 #visual .inner .pic::after {
   content: "\f063";
