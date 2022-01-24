@@ -675,7 +675,7 @@ $mobile: 539px;
                 .peo{
                     width:486px;
                     height:55px;
-                    position:absolute; bottom:0;
+                    position:absolute; bottom:0px;
 
                     img{
                         width:55px;
@@ -701,13 +701,12 @@ $mobile: 539px;
 
 #sub{
     width:100%;
-    padding:80px 100px;
+    padding:80px 0px;
 
     .inner{
         width:1180px; //
         height:270px; // 
         margin:0 auto;
-        //display:block;
         position:relative;
 
         h1{
@@ -859,7 +858,7 @@ $mobile: 539px;
                 p{ color:#fff; }
             }
             .pic{
-                .swiper-wrapper{
+                .swiper{
                     width:100%; 
                     height:100%; 
                 }
