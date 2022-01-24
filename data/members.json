@@ -1,24 +1,24 @@
 {
     "data" : [
         {
-            "name" : "David",
+            "name" : "Christopher Noah",
             "position" : "CEO",
             "pic" : "img/member1.jpg" 
         },
         {
-            "name" : "Emma",
+            "name" : "Olivia Harper",
             "position" : "Vice President",
             "pic" : "img/member2.jpg" 
         },
         {
-            "name" : "Tom",
+            "name" : "Emma Sophia",
             "position" : "Developer",
             "pic" : "img/member3.jpg" 
         },
         {
-            "name" : "David",
-            "position" : "CERTD",
+            "name" : "Liam Edwards",
+            "position" : "Product Manager",
             "pic" : "img/member4.jpg" 
-        },
+        }
     ]
 }
