@@ -7,7 +7,7 @@
         },
         {
             "name" : "Olivia Harper",
-            "position" : "Vice President",
+            "position" : "Designer",
             "pic" : "img/member2.jpg" 
         },
         {
@@ -16,9 +16,19 @@
             "pic" : "img/member3.jpg" 
         },
         {
+            "name" : "Leo Luca",
+            "position" : "Developer",
+            "pic" : "img/member4.jpg" 
+        },
+        {
+            "name" : "Amelia Mila",
+            "position" : "Designer",
+            "pic" : "img/member5.jpg" 
+        },
+        {
             "name" : "Liam Edwards",
             "position" : "Product Manager",
-            "pic" : "img/member4.jpg" 
+            "pic" : "img/member6.jpg" 
         }
     ]
 }
