@@ -844,6 +844,7 @@ figure.pop .btnClose {
   width: 100%;
   padding: 80px 0;
   position: relative;
+  overflow: hidden;
 }
 #slide .inner {
   width: 1180px;
