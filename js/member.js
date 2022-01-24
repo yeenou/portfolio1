@@ -1,4 +1,4 @@
-const frame = document.querySelector(".member");
+const frame = document.querySelector(".wrap");
 
 fetch('data/members.json')
 .then(data=>{
@@ -13,14 +13,14 @@ fetch('data/members.json')
 
     memberInfo.map((member, index)=>{
         tags+=`
-        <article>
-        <img src='${member.pic}'>
-        <h2>${member.name}</h2>
-        <p>${member.position}</p>
-        </article>
+            <article>
+                <img src='${member.pic}'>
+                <h2>${member.name}</h2>
+                <p>${member.position}</p>
+            </article>
         `
     })
 
     frame.innerHTML = tags;0
-    
+
 })
