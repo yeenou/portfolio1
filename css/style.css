@@ -105,17 +105,22 @@ table {
 }
 
 .content {
+  width: 100%;
   padding: 0 0 150px;
 }
 .content .sub_visual {
   width: 100%;
-  height: 250px;
+  height: 60vh;
   background: #6475F5;
   margin-bottom: 100px;
 }
 .content .inner {
   width: 1180px;
   margin: 0 auto;
+}
+.content .inner h1 {
+  font: bold 50px/1 "Poppins";
+  margin-bottom: 100px;
 }
 
 #footer_sub {
@@ -164,6 +169,9 @@ table {
   margin-right: 14px;
 }
 
+.community .sub_visual {
+  background: url(../img/sub1.jpg) no-repeat center/cover fixed;
+}
 .community .inner table {
   width: 100%;
   border-bottom: 2px solid #111;
@@ -255,13 +263,17 @@ table {
   color: #fff;
 }
 
+.gallery .sub_visual {
+  background: url(../img/sub2.jpg) no-repeat center/cover fixed;
+}
+
 #gallery #searchBox {
   width: 100%;
-  padding: 50px;
+  padding: 50px 0;
   font-size: 0;
 }
 #gallery #searchBox #search {
-  width: 300px;
+  width: 200px;
   height: 30px;
   border: 1px solid #333;
   padding-left: 10px;
@@ -269,7 +281,7 @@ table {
 #gallery #searchBox .btnSearch {
   width: 80px;
   height: 30px;
-  background: #333;
+  background: #6475F5;
   font: bold 12px/30px "arial";
   color: #fff;
   text-align: center;
@@ -280,7 +292,7 @@ table {
 }
 #gallery #wrap {
   width: 100%;
-  padding: 50px;
+  padding: 50px 0;
 }
 #gallery #wrap .loading {
   width: 100px;
@@ -311,17 +323,16 @@ table {
 #gallery #wrap #list li {
   float: left;
   width: 25%;
-  padding: 10px;
+  padding: 30px;
 }
 #gallery #wrap #list li div {
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 #gallery #wrap #list li div a > img {
   width: 100%;
-  filter: grayscale(100%);
 }
 #gallery #wrap #list li div p {
   font: 12px/1.2 "arial";
@@ -343,9 +354,6 @@ table {
 #gallery #wrap #list li div span strong {
   font: 11px/1 "arial";
   color: orange;
-}
-#gallery #wrap #list li div:hover a > img {
-  filter: grayscale(0%);
 }
 
 aside {
@@ -433,6 +441,10 @@ aside .close {
   color: #333;
 }
 
+.youtube .sub_visual {
+  background: url(../img/sub4.jpg) no-repeat center/cover fixed;
+}
+
 .vidList {
   width: 100%;
   display: flex;
@@ -443,7 +455,6 @@ aside .close {
 .vidList article {
   width: 48%;
   height: 400px;
-  border: 1px solid #555;
   margin-bottom: 40px;
 }
 .vidList article .pic {
@@ -460,6 +471,7 @@ aside .close {
   width: 100%;
   height: 40%;
   padding: 20px;
+  border-bottom: 5px solid #555;
 }
 .vidList article .con h2 {
   font: bold 20px/1.2 "arial";

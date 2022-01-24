@@ -1,16 +1,24 @@
+.gallery{
+    .sub_visual{
+        background:url(../img/sub2.jpg) no-repeat center/cover fixed;
+    }
+}
+
+
+
 #gallery{
 
     #searchBox{
-        width:100%; padding:50px; 
+        width:100%; padding:50px 0; 
         font-size:0; 
 
         #search{
-            width:300px; height:30px; border:1px solid #333; 
+            width:200px; height:30px; border:1px solid #333; 
             padding-left:10px; 
         }
         .btnSearch{
             width:80px; height:30px; 
-            background:#333; 
+            background:#6475F5; 
             font:bold 12px/30px 'arial'; color:#fff; 
             text-align:center; 
             border:none; 
@@ -21,7 +29,7 @@
     }
 
     #wrap{
-        width:100%; padding:50px; 
+        width:100%; padding:50px 0; 
 
         .loading{
             width:100px; 
@@ -49,16 +57,17 @@
             li{
                 float:left; 
                 width:calc(100% / 4); 
-                padding:10px; 
+                padding:30px; 
 
                 div{
-                    width:100%; padding:20px; 
+                    width:100%; padding:0px; 
                     box-shadow:5px 5px 20px rgba(0,0,0,0.1); 
                     border-radius:5px; 
 
                     a{
                         >img{
-                            width:100%; filter:grayscale(100%);
+                            width:100%; 
+                            //filter:grayscale(100%);
                         }
                     }
                     p{
@@ -78,7 +87,7 @@
                         }
                     }
 
-                    &:hover a>img{ filter:grayscale(0%); }
+                    //&:hover a>img{ filter:grayscale(0%); }
                 }
             }
         }

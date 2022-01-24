@@ -19,7 +19,7 @@ const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const key = "d5ed279c6af8a6b280a6848dd230330d";
-const per_page = 20; 
+const per_page = 10; 
 
 const url = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1`;
 

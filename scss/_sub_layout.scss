@@ -73,16 +73,23 @@
 }
 
 .content{
+    width:100%;
     padding:0 0 150px; 
 
     .sub_visual{
-        width:100%; height:250px; 
+        width:100%; 
+        height:60vh; 
         background:#6475F5; 
         margin-bottom:100px; 
     }
     .inner{
         width:1180px; margin:0 auto; 
         //min-height:500px; 
+
+        h1{
+            font:bold 50px/1 'Poppins';
+            margin-bottom:100px;
+        }
     }
 }
 

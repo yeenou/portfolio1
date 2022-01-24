@@ -1,3 +1,11 @@
+.youtube{
+    .sub_visual{
+        background:url(../img/sub4.jpg) no-repeat center/cover fixed;
+    }
+}
+
+
+
 .vidList{
     width:100%; 
     display:flex; flex-wrap:wrap; 
@@ -6,7 +14,7 @@
 
     article{
         width:48%; height:400px; 
-        border:1px solid #555; 
+        //border:1px solid #555; 
         margin-bottom:40px; 
 
         .pic{
@@ -20,6 +28,8 @@
         .con{
             width:100%; height:40%; 
             padding:20px; 
+
+            border-bottom:5px solid #555; 
 
             h2{
                 font:bold 20px/1.2 'arial'; 
