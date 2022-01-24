@@ -67,19 +67,19 @@
             <div class="pic">
 
                 <!-- visual 프레임 -->
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main3.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main4.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main5.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main6.jpg" alt=""></div>
-
-                </div> 
-                <div class="visual-button-next"></div>
-                <div class="visual-button-prev"></div>
-                <div class="visual-pagination"></div>
+                <div class="swiper visualSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main5.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/main6.jpg" alt=""></div>
+                    </div> 
+                    <div class="visual-button-next"></div>
+                    <div class="visual-button-prev"></div>
+                    <div class="visual-pagination"></div>
+                </div>
 
             </div>
         </div>
@@ -306,8 +306,8 @@
 
 
 <!-- visual swiper -->
-<!-- <script>
-    var swiper = new Swiper("#visual", {
+<script>
+    var swiper = new Swiper(".visualSwiper", {
 
         spaceBetween: 30,
         effect: "fade",
@@ -323,8 +323,7 @@
         },
 
     });
-
-  </script>   -->
+  </script>  
 
 
 
