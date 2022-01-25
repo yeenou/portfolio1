@@ -110,7 +110,7 @@ table {
 }
 .content .sub_visual {
   width: 100%;
-  height: 60vh;
+  height: 40vh;
   background: #6475F5;
   margin-bottom: 100px;
 }
@@ -171,17 +171,104 @@ table {
 
 .inner .division {
   width: 100%;
+  padding: 80px 0;
+}
+.inner .division .wrap1 {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+.inner .division .wrap1 .pic {
+  width: 45%;
+  position: relative;
+}
+.inner .division .wrap1 .pic h2 {
+  font: bold 50px/1.5 "Poppins";
+  letter-spacing: 2px;
+  text-align: right;
+  padding-right: 50px;
+}
+.inner .division .wrap1 .pic img:nth-of-type(1) {
+  width: 50%;
+  height: 58%;
+  object-fit: cover;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.inner .division .wrap1 .pic img:nth-of-type(2) {
+  width: 28%;
+  height: 36%;
+  object-fit: cover;
+  position: absolute;
+  top: 40%;
+  right: 40%;
+}
+.inner .division .wrap1 .pic img:nth-of-type(3) {
+  width: 25%;
+  height: 30%;
+  object-fit: cover;
+  position: absolute;
+  top: 26%;
+  right: 66%;
+}
+.inner .division .wrap1 .pic img:nth-of-type(4) {
+  width: 35%;
+  height: 18%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 8%;
+  left: 20%;
+}
+.inner .division .wrap1 .pic img:nth-of-type(5) {
+  width: 35%;
+  height: 18%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 26%;
+  left: 0%;
+}
+.inner .division .wrap1 .txt {
+  width: 45%;
+  position: relative;
+}
+.inner .division .wrap1 .txt h3 {
+  font: bold 40px/1 "Poppins";
+  color: #333;
+  margin: 98px 0 40px;
+}
+.inner .division .wrap1 .txt p {
+  font: 15px/26px "Poppins";
+  color: #555;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.inner .division .wrap1 .txt::before {
+  width: 30%;
+  display: block;
+  content: "Lorem ipsum dolor sitamet, conse ctetur dolorum quod odio sadolorum quod odio.";
+  font: 10px/1 "arial";
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+.inner .banner {
+  width: 100%;
+  padding: 80px 0;
+  background: #aaa;
   border: 1px solid red;
 }
-.inner .division h1 {
+.inner .banner h2 {
   font: bold 40px/1 "Poppins";
   margin-bottom: 100px;
 }
 .inner .member {
   width: 100%;
-  border: 1px solid red;
+  padding: 80px 0;
 }
-.inner .member h1 {
+.inner .member h2 {
   font: bold 40px/1 "Poppins";
   margin-bottom: 100px;
 }
@@ -207,8 +294,10 @@ table {
   height: 450px;
   object-fit: cover;
   margin-bottom: 15px;
+  filter: grayscale(0.9);
+  transition: 0.5s;
 }
-.inner .member .wrap article h2 {
+.inner .member .wrap article h3 {
   font: bold 25px/1 "Poppins";
   color: #333;
   margin-bottom: 5px;
@@ -217,21 +306,21 @@ table {
   font: 15px/22px "Poppins";
   color: #555;
   padding-bottom: 15px;
-  border-bottom: 4px solid #aaa;
   transition: 0.5s;
 }
-.inner .member .wrap article:hover p {
-  border-bottom: 4px solid #6475F5;
+.inner .member .wrap article:hover img {
+  filter: grayscale(0);
 }
 .inner .con {
   width: 100%;
+  padding: 80px 0;
+  background: #aaa;
   border: 1px solid red;
 }
-.inner .con h1 {
+.inner .con h2 {
   font: bold 40px/1 "Poppins";
   margin-bottom: 100px;
 }
-
 .community .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }

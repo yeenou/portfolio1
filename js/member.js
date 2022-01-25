@@ -15,7 +15,7 @@ fetch('data/members.json')
         tags+=`
             <article>
                 <img src='${member.pic}'>
-                <h2>${member.name}</h2>
+                <h3>${member.name}</h3>
                 <p>${member.position}</p>
             </article>
         `
