@@ -169,6 +169,56 @@ table {
   margin-right: 14px;
 }
 
+@media screen and (max-width: 1179px) {
+  #header_sub .inner {
+    width: 100%;
+    height: 100px;
+  }
+  #header_sub .inner > h1 {
+    left: 20px;
+  }
+  #header_sub .inner .menuWeb {
+    display: none;
+  }
+  #header_sub .inner .btnCall {
+    display: block;
+  }
+  #header_sub .inner .menuMo {
+    display: block;
+  }
+
+  .content .inner {
+    width: 100%;
+    padding: 80px 30px;
+  }
+
+  #footer_sub {
+    padding: 80px 30px;
+  }
+  #footer_sub .inner {
+    width: 100%;
+    display: block;
+  }
+  #footer_sub .inner .wrap {
+    width: 100%;
+    height: 20%;
+    margin-bottom: 45px;
+  }
+  #footer_sub .inner .wrap h1 {
+    margin-bottom: 30px;
+  }
+  #footer_sub .inner .footerLi {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #footer_sub .inner .footerLi ul {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  #footer_sub .inner .footerLi ul:last-child {
+    margin-right: 0;
+  }
+}
 .department .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
@@ -180,32 +230,31 @@ table {
   padding: 0;
 }
 
-.inner .division {
+.division {
   width: 100%;
   padding: 80px 0;
   position: relative;
 }
-.inner .division .wrap1 {
+.division .wrap1 {
   width: 100%;
-  height: 650px;
   display: flex;
   justify-content: space-between;
 }
-.inner .division .wrap1 .pic {
+.division .wrap1 .pic {
   width: 45%;
   position: relative;
 }
-.inner .division .wrap1 .pic h2 {
+.division .wrap1 .pic h2 {
   font: bold 50px/1.5 "Poppins";
   color: #6475F5;
   letter-spacing: 2px;
   text-align: right;
   padding-right: 50px;
 }
-.inner .division .wrap1 .pic h2 span {
+.division .wrap1 .pic h2 span {
   color: #000;
 }
-.inner .division .wrap1 .pic img:nth-of-type(1) {
+.division .wrap1 .pic img:nth-of-type(1) {
   width: 46%;
   height: 54%;
   object-fit: cover;
@@ -213,7 +262,7 @@ table {
   top: 30%;
   right: 0;
 }
-.inner .division .wrap1 .pic img:nth-of-type(2) {
+.division .wrap1 .pic img:nth-of-type(2) {
   width: 28%;
   height: 32%;
   object-fit: cover;
@@ -221,7 +270,7 @@ table {
   top: 40%;
   right: 40%;
 }
-.inner .division .wrap1 .pic img:nth-of-type(3) {
+.division .wrap1 .pic img:nth-of-type(3) {
   width: 25%;
   height: 30%;
   object-fit: cover;
@@ -229,7 +278,7 @@ table {
   top: 27%;
   left: 7%;
 }
-.inner .division .wrap1 .pic img:nth-of-type(4) {
+.division .wrap1 .pic img:nth-of-type(4) {
   width: 32%;
   height: 15%;
   object-fit: cover;
@@ -237,7 +286,7 @@ table {
   bottom: 13%;
   left: 22%;
 }
-.inner .division .wrap1 .pic img:nth-of-type(5) {
+.division .wrap1 .pic img:nth-of-type(5) {
   width: 32%;
   height: 15%;
   object-fit: cover;
@@ -245,22 +294,22 @@ table {
   bottom: 28%;
   left: 0%;
 }
-.inner .division .wrap1 .txt {
+.division .wrap1 .txt {
   width: 45%;
   position: relative;
 }
-.inner .division .wrap1 .txt h3 {
+.division .wrap1 .txt h3 {
   font: bold 40px/1 "Poppins";
   color: #333;
   margin: 98px 0 40px;
 }
-.inner .division .wrap1 .txt p {
+.division .wrap1 .txt p {
   font: 15px/26px "Poppins";
   color: #555;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
-.inner .division .wrap1 .txt::before {
+.division .wrap1 .txt::before {
   width: 30%;
   display: block;
   content: "Lorem ipsum dolor sitamet, conse ctetur dolorum quod odio sadolorum quod odio.";
@@ -270,7 +319,7 @@ table {
   right: 0;
   top: 15px;
 }
-.inner .division::before {
+.division::before {
   content: "";
   display: block;
   width: 5px;
@@ -280,7 +329,7 @@ table {
   bottom: 40px;
   left: 50%;
 }
-.inner .division::after {
+.division::after {
   content: "";
   display: block;
   width: 300px;
@@ -290,59 +339,60 @@ table {
   bottom: 95px;
   left: 230px;
 }
-.inner .banner {
+
+.banner {
   width: 100%;
   padding: 80px 0;
   background: #aaa;
   border: 1px solid red;
 }
-.inner .banner h2 {
+.banner h2 {
   font: bold 40px/1 "Poppins";
   margin-bottom: 100px;
 }
-.inner .member {
+.member {
   width: 100%;
   padding: 80px 0;
 }
-.inner .member h2 {
+.member h2 {
   font: bold 40px/1 "Poppins";
   margin-bottom: 100px;
   text-align: center;
 }
-.inner .member .wrap {
+.member .wrap {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.inner .member .wrap article {
+.member .wrap article {
   width: 32%;
   margin-right: 2%;
   margin-bottom: 30px;
   position: relative;
 }
-.inner .member .wrap article:nth-of-type(3n) {
+.member .wrap article:nth-of-type(3n) {
   margin-right: 0;
 }
-.inner .member .wrap article img {
+.member .wrap article img {
   width: 100%;
-  height: 450px;
+  height: 77%;
   object-fit: cover;
   margin-bottom: 15px;
   filter: grayscale(0.9);
   transition: 0.5s;
 }
-.inner .member .wrap article h3 {
+.member .wrap article h3 {
   font: bold 25px/1 "Poppins";
   color: #333;
   margin-bottom: 5px;
 }
-.inner .member .wrap article p {
+.member .wrap article p {
   font: 15px/22px "Poppins";
   color: #555;
   padding-bottom: 15px;
   transition: 0.5s;
 }
-.inner .member .wrap article::after {
+.member .wrap article::after {
   content: "";
   display: block;
   width: 0px;
@@ -353,49 +403,97 @@ table {
   bottom: 0%;
   transition: 1s;
 }
-.inner .member .wrap article:hover img {
+.member .wrap article:hover img {
   filter: grayscale(0);
 }
-.inner .member .wrap article:hover::after {
+.member .wrap article:hover::after {
   width: 100%;
 }
-.inner .con {
+
+.con {
   width: 100%;
   height: 500px;
   padding-top: 80px;
 }
-.inner .con .wrap4 {
+.con .wrap4 {
   width: 100%;
   height: 100%;
   display: flex;
 }
-.inner .con .wrap4 article {
+.con .wrap4 article {
   width: 50%;
   text-align: center;
 }
-.inner .con .wrap4 article:nth-of-type(1) {
+.con .wrap4 article:nth-of-type(1) {
   padding: 50px;
 }
-.inner .con .wrap4 article h3 {
+.con .wrap4 article h3 {
   font: bold 40px/1.5 "Poppins";
   color: #000;
   letter-spacing: 1px;
   margin: 50px 0;
 }
-.inner .con .wrap4 article h3 span {
+.con .wrap4 article h3 span {
   color: #6475F5;
 }
-.inner .con .wrap4 article p {
+.con .wrap4 article p {
   font: 15px/26px "Poppins";
   color: #555;
   letter-spacing: 1px;
 }
-.inner .con .wrap4 article img {
+.con .wrap4 article img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/*tablet -------------------------------------*/
+@media screen and (max-width: 1179px) {
+  .division .wrap1 {
+    display: block;
+  }
+  .division .wrap1 .pic {
+    width: 100%;
+    height: 650px;
+  }
+  .division .wrap1 .txt {
+    width: 100%;
+    height: 650px;
+  }
+  .division .wrap1 .txt::before {
+    display: none;
+  }
+  .division::before {
+    display: none;
+  }
+  .division::after {
+    display: none;
+  }
+
+  .member .wrap article {
+    width: 49%;
+  }
+  .member .wrap article:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .member .wrap article:nth-of-type(3) {
+    margin-right: 2%;
+  }
+
+  .con {
+    height: 20%;
+    padding: 0px;
+  }
+  .con .wrap4 {
+    display: block;
+  }
+  .con .wrap4 article {
+    width: 100%;
+  }
+  .con .wrap4 article img {
+    height: 500px;
+  }
+}
 .community .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
