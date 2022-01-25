@@ -120,7 +120,7 @@ table {
 }
 .content .inner h1 {
   font: bold 50px/1 "Poppins";
-  margin-bottom: 100px;
+  padding: 100px 0;
 }
 
 #footer_sub {
@@ -169,6 +169,17 @@ table {
   margin-right: 14px;
 }
 
+.department .sub_visual {
+  background: url(../img/sub1.jpg) no-repeat center/cover fixed;
+}
+.department .sub_visual .inner h1 {
+  color: #fff;
+}
+
+.content {
+  padding: 0;
+}
+
 .inner .division {
   width: 100%;
   padding: 80px 0;
@@ -185,9 +196,13 @@ table {
 }
 .inner .division .wrap1 .pic h2 {
   font: bold 50px/1.5 "Poppins";
+  color: #6475F5;
   letter-spacing: 2px;
   text-align: right;
   padding-right: 50px;
+}
+.inner .division .wrap1 .pic h2 span {
+  color: #000;
 }
 .inner .division .wrap1 .pic img:nth-of-type(1) {
   width: 50%;
@@ -313,14 +328,37 @@ table {
 }
 .inner .con {
   width: 100%;
-  padding: 80px 0;
-  background: #aaa;
-  border: 1px solid red;
+  height: 500px;
 }
-.inner .con h2 {
-  font: bold 40px/1 "Poppins";
-  margin-bottom: 100px;
+.inner .con .wrap4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
+.inner .con .wrap4 article {
+  width: 50%;
+  text-align: center;
+}
+.inner .con .wrap4 article:nth-of-type(1) {
+  padding: 60px;
+}
+.inner .con .wrap4 article h3 {
+  font: bold 40px/1.5 "Poppins";
+  color: #6475F5;
+  letter-spacing: 1px;
+  margin: 50px 0;
+}
+.inner .con .wrap4 article p {
+  font: 15px/26px "Poppins";
+  color: #555;
+  letter-spacing: 1px;
+}
+.inner .con .wrap4 article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .community .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
