@@ -196,10 +196,13 @@
 
                 h3{
                     font: bold 40px/1.5 "Poppins";
-                    color: #6475F5;
+                    color: #000;
                     letter-spacing:1px;
                     margin:50px 0;
+
+                    span{ color:#6475F5; }
                 }
+                
                 p{
                     font: 15px/26px "Poppins";
                     color: #555;
