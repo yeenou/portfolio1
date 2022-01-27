@@ -13,7 +13,7 @@ maxResults : 6,
 
 
 
-const vidList = document.querySelector(".vidList"); 
+const vidList = document.querySelector(".wrapvidList"); 
 const key = 'AIzaSyCLfKAY8NfxuZ2D0WVoKavyZ5nrbS2_atU'; 
 const playlistId = 'PLZOQwZqfo4_dr7JigsGw_LEZ0i4ybTJv5';
 const num = 6; 

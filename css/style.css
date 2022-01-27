@@ -230,31 +230,31 @@ table {
   padding: 0;
 }
 
-.division {
+.introAbout {
   width: 100%;
   padding: 80px 0;
   position: relative;
 }
-.division .wrap1 {
+.introAbout .wrapAbout {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.division .wrap1 .pic {
+.introAbout .wrapAbout .pic {
   width: 45%;
   position: relative;
 }
-.division .wrap1 .pic h2 {
+.introAbout .wrapAbout .pic h2 {
   font: bold 50px/1.5 "Poppins";
   color: #6475F5;
   letter-spacing: 2px;
   text-align: right;
   padding-right: 50px;
 }
-.division .wrap1 .pic h2 span {
+.introAbout .wrapAbout .pic h2 span {
   color: #000;
 }
-.division .wrap1 .pic img:nth-of-type(1) {
+.introAbout .wrapAbout .pic img:nth-of-type(1) {
   width: 46%;
   height: 54%;
   object-fit: cover;
@@ -262,7 +262,7 @@ table {
   top: 30%;
   right: 0;
 }
-.division .wrap1 .pic img:nth-of-type(2) {
+.introAbout .wrapAbout .pic img:nth-of-type(2) {
   width: 28%;
   height: 32%;
   object-fit: cover;
@@ -270,7 +270,7 @@ table {
   top: 40%;
   right: 40%;
 }
-.division .wrap1 .pic img:nth-of-type(3) {
+.introAbout .wrapAbout .pic img:nth-of-type(3) {
   width: 25%;
   height: 30%;
   object-fit: cover;
@@ -278,7 +278,7 @@ table {
   top: 27%;
   left: 7%;
 }
-.division .wrap1 .pic img:nth-of-type(4) {
+.introAbout .wrapAbout .pic img:nth-of-type(4) {
   width: 32%;
   height: 15%;
   object-fit: cover;
@@ -286,7 +286,7 @@ table {
   bottom: 13%;
   left: 22%;
 }
-.division .wrap1 .pic img:nth-of-type(5) {
+.introAbout .wrapAbout .pic img:nth-of-type(5) {
   width: 32%;
   height: 15%;
   object-fit: cover;
@@ -294,22 +294,22 @@ table {
   bottom: 28%;
   left: 0%;
 }
-.division .wrap1 .txt {
+.introAbout .wrapAbout .txt {
   width: 45%;
   position: relative;
 }
-.division .wrap1 .txt h3 {
+.introAbout .wrapAbout .txt h3 {
   font: bold 40px/1 "Poppins";
   color: #333;
   margin: 98px 0 40px;
 }
-.division .wrap1 .txt p {
+.introAbout .wrapAbout .txt p {
   font: 15px/26px "Poppins";
   color: #555;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
-.division .wrap1 .txt::before {
+.introAbout .wrapAbout .txt::before {
   width: 30%;
   display: block;
   content: "Lorem ipsum dolor sitamet, conse ctetur dolorum quod odio sadolorum quod odio.";
@@ -319,7 +319,7 @@ table {
   right: 0;
   top: 15px;
 }
-.division::before {
+.introAbout::before {
   content: "";
   display: block;
   width: 5px;
@@ -329,7 +329,7 @@ table {
   bottom: 40px;
   left: 50%;
 }
-.division::after {
+.introAbout::after {
   content: "";
   display: block;
   width: 300px;
@@ -449,24 +449,24 @@ table {
 
 /*tablet -------------------------------------*/
 @media screen and (max-width: 1179px) {
-  .division .wrap1 {
+  .introAbout .wrapAbout {
     display: block;
   }
-  .division .wrap1 .pic {
+  .introAbout .wrapAbout .pic {
     width: 100%;
     height: 650px;
   }
-  .division .wrap1 .txt {
+  .introAbout .wrapAbout .txt {
     width: 100%;
     height: 650px;
   }
-  .division .wrap1 .txt::before {
+  .introAbout .wrapAbout .txt::before {
     display: none;
   }
-  .division::before {
+  .introAbout::before {
     display: none;
   }
-  .division::after {
+  .introAbout::after {
     display: none;
   }
 
@@ -769,48 +769,119 @@ aside .close {
 .youtube .sub_visual {
   background: url(../img/sub4.jpg) no-repeat center/cover fixed;
 }
+.youtube .sub_visual .inner h1 {
+  color: #fff;
+}
+
+.introYoutube {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.introYoutube h2 {
+  width: 36%;
+  font: bold 40px/1 "Poppins";
+  margin-bottom: 100px;
+}
+.introYoutube p {
+  width: 64%;
+  font: 15px/26px "Poppins";
+  color: #555;
+  letter-spacing: 1px;
+}
+.introYoutube .wrapYoutube {
+  width: 100%;
+  display: flex;
+}
+.introYoutube .wrapYoutube .pic {
+  width: 50%;
+  display: flex;
+}
+.introYoutube .wrapYoutube .pic img {
+  width: 49%;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 2%;
+}
+.introYoutube .wrapYoutube .pic img:last-child {
+  margin-right: 0;
+}
+.introYoutube .wrapYoutube .txt {
+  width: 50%;
+  padding-left: 15%;
+}
+.introYoutube .wrapYoutube .txt article {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.introYoutube .wrapYoutube .txt article:last-child {
+  margin-bottom: 0;
+}
+.introYoutube .wrapYoutube .txt article h3 {
+  font: bold 40px/1.5 "Poppins";
+  color: #000;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.introYoutube .wrapYoutube .txt article p {
+  width: 100%;
+  font: 15px/26px "Poppins";
+  color: #555;
+  letter-spacing: 1px;
+}
 
 .vidList {
+  width: 100%;
+  padding: 80px 0;
+}
+.vidList h2 {
+  font: bold 40px/1 "Poppins";
+  margin-bottom: 100px;
+  text-align: center;
+}
+.vidList .wrapvidList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
 }
-.vidList article {
+.vidList .wrapvidList article {
   width: 48%;
-  height: 400px;
+  height: 450px;
   margin-bottom: 40px;
 }
-.vidList article .pic {
+.vidList .wrapvidList article .pic {
   display: block;
   width: 100%;
   height: 60%;
 }
-.vidList article .pic > img {
+.vidList .wrapvidList article .pic > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.vidList article .con {
+.vidList .wrapvidList article .con {
   width: 100%;
   height: 40%;
   padding: 20px;
-  border-bottom: 5px solid #555;
+  border-bottom: 3px solid #aaa;
 }
-.vidList article .con h2 {
+.vidList .wrapvidList article .con h2 {
   font: bold 20px/1.2 "arial";
   color: #444;
   margin-bottom: 15px;
 }
-.vidList article .con p {
+.vidList .wrapvidList article .con p {
   font: 14px/1.4 "arial";
   color: #666;
   margin-bottom: 20px;
 }
-.vidList article .con span {
+.vidList .wrapvidList article .con span {
   font: bold 16px/1 "arial";
-  color: orange;
+  color: #6475F5;
 }
 
 figure.pop {
@@ -832,6 +903,14 @@ figure.pop .btnClose {
   right: 50px;
   color: #fff;
   cursor: pointer;
+}
+
+.divisionYoutube {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+  height: 600px;
+  border: 1px solid red;
 }
 
 #header {
