@@ -60,7 +60,7 @@
 
                 &:last-child{ margin-bottom:0; }
 
-                h3{
+                >h3{
                     font: bold 40px/1.5 "Poppins";
                     color: #000;
                     letter-spacing:1px;
@@ -69,7 +69,7 @@
                     //span{ color:#6475F5; }
                 }
     
-                p{
+                >p{
                     width:100%;
                     font: 15px/26px "Poppins";
                     color: #555;
@@ -79,7 +79,6 @@
         }
     }
 }
-
 
 .vidList{
     width:100%; 
@@ -156,13 +155,51 @@ figure.pop{
     position:relative;
 
 
-
-    height:600px;
-    border:1px solid red;
+    // height:600px;
+    // border:1px solid red;
 
 }
 
 
 
 
+/*tablet -------------------------------------*/
+@media screen and (max-width: $tablet) {
 
+    .introYoutube{
+        display: block;
+    
+        >h2{ 
+            width:100%; 
+            margin-bottom:80px;
+        }
+        >p{ 
+            width:100%; 
+            margin-bottom:100px;
+        }
+    
+        .wrapYoutube{
+            display:block;
+    
+            .pic{ 
+                width:100%; 
+                margin-bottom:80px;
+            }
+
+            .txt{
+                width:100%;
+                // padding-left:15%;
+            }
+        }
+    }
+    
+    .vidList{
+        .wrapvidList{
+            article{ width:100%; }
+        }
+    }
+
+
+
+
+}

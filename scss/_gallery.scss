@@ -1,6 +1,12 @@
 .gallery{
     .sub_visual{
         background:url(../img/sub2.jpg) no-repeat center/cover fixed;
+
+        .inner{
+            h1{
+                color:#fff;
+            }
+        }
     }
 }
 
@@ -8,9 +14,16 @@
 
 #gallery{
 
+    h2{ 
+        font:bold 40px/1 'Poppins'; 
+        margin-bottom:100px;
+        text-align:center;
+    }
+
     #searchBox{
         width:100%; padding:50px 0; 
         font-size:0; 
+        text-align: right;
 
         #search{
             width:200px; height:30px; border:1px solid #333; 
@@ -83,7 +96,7 @@
                             margin-right:5px; 
                         }
                         strong{
-                            font:11px/1 'arial'; color:orange; 
+                            font:11px/1 'arial'; color:#6475F5; 
                         }
                     }
 

@@ -591,11 +591,20 @@ table {
 .gallery .sub_visual {
   background: url(../img/sub2.jpg) no-repeat center/cover fixed;
 }
+.gallery .sub_visual .inner h1 {
+  color: #fff;
+}
 
+#gallery h2 {
+  font: bold 40px/1 "Poppins";
+  margin-bottom: 100px;
+  text-align: center;
+}
 #gallery #searchBox {
   width: 100%;
   padding: 50px 0;
   font-size: 0;
+  text-align: right;
 }
 #gallery #searchBox #search {
   width: 200px;
@@ -678,7 +687,7 @@ table {
 }
 #gallery #wrap #list li div span strong {
   font: 11px/1 "arial";
-  color: orange;
+  color: #6475F5;
 }
 
 aside {
@@ -819,13 +828,13 @@ aside .close {
 .introYoutube .wrapYoutube .txt article:last-child {
   margin-bottom: 0;
 }
-.introYoutube .wrapYoutube .txt article h3 {
+.introYoutube .wrapYoutube .txt article > h3 {
   font: bold 40px/1.5 "Poppins";
   color: #000;
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-.introYoutube .wrapYoutube .txt article p {
+.introYoutube .wrapYoutube .txt article > p {
   width: 100%;
   font: 15px/26px "Poppins";
   color: #555;
@@ -909,10 +918,36 @@ figure.pop .btnClose {
   width: 100%;
   padding: 80px 0;
   position: relative;
-  height: 600px;
-  border: 1px solid red;
 }
 
+/*tablet -------------------------------------*/
+@media screen and (max-width: 1179px) {
+  .introYoutube {
+    display: block;
+  }
+  .introYoutube > h2 {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .introYoutube > p {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .introYoutube .wrapYoutube {
+    display: block;
+  }
+  .introYoutube .wrapYoutube .pic {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .introYoutube .wrapYoutube .txt {
+    width: 100%;
+  }
+
+  .vidList .wrapvidList article {
+    width: 100%;
+  }
+}
 #header {
   width: 100%;
 }
