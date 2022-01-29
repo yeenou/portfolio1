@@ -497,6 +497,9 @@ table {
 .community .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
+.community .inner {
+  padding-bottom: 100px;
+}
 .community .inner table {
   width: 100%;
   border-bottom: 2px solid #111;
