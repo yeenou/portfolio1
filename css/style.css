@@ -514,7 +514,7 @@ table {
 }
 .community .inner table tr th {
   padding: 15px;
-  background: #444;
+  background: #aaa;
   color: #fff;
 }
 .community .inner table tr th:nth-of-type(1) {
@@ -527,7 +527,7 @@ table {
   width: 15%;
 }
 .community .inner table tr td {
-  padding: 13px;
+  padding: 20px;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
@@ -585,6 +585,7 @@ table {
   color: #666;
   margin: 0 5px;
   transition: 0.5s;
+  border: none;
 }
 .community .inner .pagination .numbers a:hover {
   background: #666;
