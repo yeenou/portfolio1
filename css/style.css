@@ -497,6 +497,9 @@ table {
 .community .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
+.community .sub_visual .inner h1 {
+  color: #fff;
+}
 .community .introCommunity .inner {
   padding: 80px 0;
 }

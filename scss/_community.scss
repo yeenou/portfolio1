@@ -1,6 +1,12 @@
 .community{
     .sub_visual{
         background:url(../img/sub1.jpg) no-repeat center/cover fixed;
+        
+        .inner{
+            h1{
+                color:#fff;
+            }
+        }
     }
 
 
@@ -14,6 +20,9 @@
                 letter-spacing:2px;
                 // text-align:right;
                 padding-right:50px;
+            }
+            article{
+                
             }
         }
     }
