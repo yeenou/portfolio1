@@ -10,42 +10,95 @@
     }
 
 
-    .introCommunity{
-        .inner{
-            padding:80px 0;
-
-            h2{
-                font:bold 50px/1.5 'Poppins'; 
-                color:#6475F5;
-                letter-spacing:2px;
-                // text-align:right;
-                padding-right:50px;
-            }
-            article{
-
-            }
-        }
-    }
-
-
 
     .inner{
         padding-bottom:100px;
 
+        >h1{ 
+            padding:40px; 
+            text-align:center; 
+        }
+        >p{ 
+            padding:20px 300px;
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .tab{
+            margin-bottom:50px;
+			#tabMenu{
+                width:100%; 
+                //height:50px;
+                display:flex; justify-content:center;
+                
+
+                //border: 1px solid red;
+                
+                li {
+                    width:calc(100% / 3);
+                    border-right:2px solid #ddd;
+                    border-bottom:2px dashed #ddd;
+                    transition:0.5s;
+
+                    &:last-child{ border-right:none; }
+
+                    a {
+						display: block;
+						padding: 15px 50px;
+						font: bold 20px/1 "Poppins";
+						color: #777;
+                        text-align:center;
+                        transition:0.5s;
+					}
+
+                    &:hover{
+                        background:linear-gradient(45deg, #6475F5, rgb(118, 219, 255));
+
+                        a{ color:#fff; }
+                    }
+				}
+			}
+        }
+
+        #searchBox{
+            width:100%; padding:30px 0; 
+            font-size:0; 
+            text-align: right;
+    
+            #search{
+                width:200px; height:30px; 
+                border:1px solid #ddd; 
+                padding-left:10px; 
+                margin-left:10px; 
+            }
+            .btnSearch{
+                width:30px; height:30px; 
+                background:#fff; 
+                font:bold 12px/30px 'arial'; color:#000; 
+                text-align:center; 
+                border:1px solid #ddd; 
+                cursor:pointer; 
+                margin-left:10px; 
+                vertical-align:top; 
+            }
+        }
+        
         table{
             width:100%; 
-            border-bottom:2px solid #111; 
+            //border-bottom:2px solid #111; 
             border-collapse:collapse; 
             margin-bottom:50px; 
-            tr{
-                &:nth-of-type(even){ background:#eee; }
 
-                &:hover{ background:lightcyan; }
+            tr{
+                // &:nth-of-type(even){ background:#eee; }
+
+                &:hover{ background:#eee; }
 
                 th{
                     padding:15px; 
-                    background:#aaa; 
-                    color:#fff; 
+                    background:#eee; 
+                    color:#333; 
+                    border-top:3px solid #777;
 
                     &:nth-of-type(1){ width:10%; }
                     &:nth-of-type(3){ width:15%; }
@@ -66,61 +119,80 @@
         }
 
         .pagination{
-            width:100%;  text-align:center; 
+            width:100%;  
+            text-align:center; 
+            display:flex;
+            justify-content:center;
+            margin-bottom:50px;
 
-            &::after{ content:''; display:block; clear:both; }
             .prev{
-                float:left; 
-                display:block; width:30px; height:30px; 
-                font-size:20px; color:#eee; text-align:center; background:#555; 
+                width:30px; height:30px; 
+                //font:20px/30px 'arial'; 
+                font-size:20px; 
+                color:#333; 
+                text-align:center;  
+                line-height: 30px;
+                border:1px solid #ddd; 
             }
             .next{
-                float:right; 
-                display:block; width:30px; height:30px; 
-                font-size:20px; color:#eee; 
-                text-align:center; background:#555; 
+                width:30px; height:30px; 
+                font-size:20px; 
+                color:#333; 
+                text-align:center; 
+                line-height: 30px;
+                border:1px solid #ddd; 
             }
 
+
+
             .numbers{
-                display:inline-block; text-align:center; 
+                display:inline-block; 
+                text-align:center; 
                 font-size:0; 
+                margin:0 10px;
 
                 a{
-                    border:1px solid #888; 
+                    border:1px solid #fff; 
                     display:inline-block; 
                     width:30px; height:30px; 
-                    font:11px/30px 'arial'; color:#666; 
+                    font:bold 13px/30px 'Nunito'; 
+                    color:#666; 
                     margin:0 5px; 
                     transition:0.5s; 
 
-                    border:none;
-
                     &:hover{
-                        background:#666; color:#fff; 
+                        border-color:#ddd;
+                        font-weight:bold;
                     }
+                }
+            }
+        }
+
+
+
+        .conCommunity{
+            border: 1px solid red;
+
+            .wrap{
+                padding:80px 0;
+
+                a{
+                    background:#ddd;
+                    
+                    strong{
+                        font:bold 50px/1.5 'Poppins'; 
+                        color:#6475F5;
+                        letter-spacing:2px;
+                        // text-align:right;
+                        padding-right:50px;
+                    }
+                    p{}
+                    span{}
                 }
             }
         }
     }
 
-
-    
-    .conCommunity{
-        .inner{
-            padding:80px 0;
-
-            h2{
-                font:bold 50px/1.5 'Poppins'; 
-                color:#6475F5;
-                letter-spacing:2px;
-                // text-align:right;
-                padding-right:50px;
-            }
-            article{
-
-            }
-        }
-    }
 }
 
 
