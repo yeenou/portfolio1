@@ -578,7 +578,7 @@ table {
 }
 .community .inner table tr th {
   padding: 15px;
-  background: #eee;
+  background: #f9f9f9;
   color: #333;
   border-top: 3px solid #777;
 }
@@ -621,7 +621,7 @@ table {
   color: #333;
   text-align: center;
   line-height: 30px;
-  border: 1px solid #ddd;
+  background: #f9f9f9;
 }
 .community .inner .pagination .next {
   width: 30px;
@@ -630,7 +630,7 @@ table {
   color: #333;
   text-align: center;
   line-height: 30px;
-  border: 1px solid #ddd;
+  background: #f9f9f9;
 }
 .community .inner .pagination .numbers {
   display: inline-block;
@@ -658,7 +658,7 @@ table {
 }
 .community .inner .conCommunity .wrap a {
   width: 30%;
-  background: #efefef;
+  background: #f9f9f9;
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
@@ -670,24 +670,29 @@ table {
   display: block;
   font: bold 28px/1.2 "Poppins";
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .community .inner .conCommunity .wrap a .txt p {
   display: block;
   font: 16px/1.5 "Poppins";
-  color: #333;
+  color: #515151;
 }
-.community .inner .conCommunity .wrap a .pic {
+.community .inner .conCommunity .wrap a .icon {
+  position: relative;
   width: 120px;
   height: 120px;
-  border: 1px solid red;
 }
-.community .inner .conCommunity .wrap a .pic:nth-of-type(1) {
+.community .inner .conCommunity .wrap a .icon:nth-of-type(2) {
   background-color: #fff8bd;
 }
-.community .inner .conCommunity .wrap a .pic img {
-  width: 80px;
-  height: 80px;
+.community .inner .conCommunity .wrap a .icon img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px -2px;
 }
 
 .gallery .sub_visual {

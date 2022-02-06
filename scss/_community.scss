@@ -96,7 +96,7 @@
 
                 th{
                     padding:15px; 
-                    background:#eee; 
+                    background:#f9f9f9; 
                     color:#333; 
                     border-top:3px solid #777;
 
@@ -132,7 +132,8 @@
                 color:#333; 
                 text-align:center;  
                 line-height: 30px;
-                border:1px solid #ddd; 
+                //border:1px solid #ddd; 
+                background:#f9f9f9; 
             }
             .next{
                 width:30px; height:30px; 
@@ -140,7 +141,8 @@
                 color:#333; 
                 text-align:center; 
                 line-height: 30px;
-                border:1px solid #ddd; 
+                //border:1px solid #ddd; 
+                background:#f9f9f9; 
             }
 
 
@@ -179,7 +181,7 @@
 
                 a{
                     width:30%;
-                    background:#efefef;
+                    background:#f9f9f9;
                     padding:30px 20px;
                     display:flex; justify-content:space-between;
 
@@ -190,30 +192,34 @@
                             display:block;
                             font:bold 28px/1.2 'Poppins'; 
                             color:#000;
-                            margin-bottom:20px;
+                            margin-bottom:16px;
                         }
                         p{
                             display:block;
                             font:16px/1.5 'Poppins'; 
-                            color:#333;
+                            color:#515151;
                         }
                     }
-                    .pic{
+                    .icon{
+                        position:relative;
                         width:120px; height:120px;
 
-                        border: 1px solid red;
-
-                        &:nth-of-type(1){ background-color:#fff8bd; }
+                        //&:nth-of-type(1){ background-color:#fcdcdc; }
+                        &:nth-of-type(2){ background-color:#fff8bd; }
+                        //&:nth-of-type(3){ background-color:#fed6bd; }
                         
                         img{
-                            width:80px; height:80px;
+                            width:70px; height:70px; 
+                            position: absolute;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%, -50%);
+                            box-shadow:5px 5px 10px -2px;
                         }
                     }
                 }
             }
         }
     }
-
 }
 
 
