@@ -123,7 +123,7 @@
             text-align:center; 
             display:flex;
             justify-content:center;
-            margin-bottom:50px;
+            margin-bottom:70px;
 
             .prev{
                 width:30px; height:30px; 
@@ -174,20 +174,37 @@
             border: 1px solid red;
 
             .wrap{
-                padding:80px 0;
+                display:flex; 
+                justify-content:space-between;
 
                 a{
-                    background:#ddd;
-                    
-                    strong{
-                        font:bold 50px/1.5 'Poppins'; 
-                        color:#6475F5;
-                        letter-spacing:2px;
-                        // text-align:right;
-                        padding-right:50px;
+                    width:30%;
+                    background:#efefef;
+                    padding:30px 20px;
+                    display:flex;
+
+                    .txt{
+
+                        >h2{
+                            display:block;
+                            font:bold 28px/1.2 'Poppins'; 
+                            color:#000;
+                            margin-bottom:20px;
+                        }
+                        p{
+                            display:block;
+                            font:16px/1 'Poppins'; 
+                            color:#333;
+                            padding-right:50%;
+                        }
                     }
-                    p{}
-                    span{}
+                    .pic{
+                        width:120px; height:120px;
+                        
+                        img{
+                            width:80px; height:80px;
+                        }
+                    }
                 }
             }
         }

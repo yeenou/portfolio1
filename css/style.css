@@ -612,7 +612,7 @@ table {
   text-align: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .community .inner .pagination .prev {
   width: 30px;
@@ -656,17 +656,36 @@ table {
   border: 1px solid red;
 }
 .community .inner .conCommunity .wrap {
-  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .community .inner .conCommunity .wrap a {
-  background: #ddd;
+  width: 30%;
+  background: #efefef;
+  padding: 30px 20px;
+  display: flex;
 }
-.community .inner .conCommunity .wrap a strong {
-  font: bold 50px/1.5 "Poppins";
-  color: #6475F5;
-  letter-spacing: 2px;
-  padding-right: 50px;
+.community .inner .conCommunity .wrap a .txt > h2 {
+  display: block;
+  font: bold 28px/1.2 "Poppins";
+  color: #000;
+  margin-bottom: 20px;
 }
+.community .inner .conCommunity .wrap a .txt p {
+  display: block;
+  font: 16px/1 "Poppins";
+  color: #333;
+  padding-right: 50%;
+}
+.community .inner .conCommunity .wrap a .pic {
+  width: 120px;
+  height: 120px;
+}
+.community .inner .conCommunity .wrap a .pic img {
+  width: 80px;
+  height: 80px;
+}
+
 .gallery .sub_visual {
   background: url(../img/sub2.jpg) no-repeat center/cover fixed;
 }
