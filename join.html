@@ -26,6 +26,7 @@
                 </ul>
 
                 <ul class="util">
+                    <li><a href="join.html">JOIN</a></li>
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a href="#"><img src="img/menu.png" alt=""></a></li>
                 </ul>
@@ -34,11 +35,114 @@
         </div>
     </header>
 
-    <section class="content">
-        <div class="sub_visual"></div>
-        <div class="inner">
+    <section class="content join">
+        <div class="sub_visual">
+            <div class="inner">
+                <h1>JOIN</h1>
+                <p></p>
+            </div>
         </div>
+        <div class="inner">
+            <!-- <h1>JOIN <span>회원가입</span></h1> -->
+           
+            <form action="">
+                <fieldset>
+                    <legend class="hidden">회원가입양식폼</legend>
 
+                    <h2><label for="terms">Terms & Policy</label></h2>
+                    <textarea name="terms" id="terms" cols="30" rows="10">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus reprehenderit ipsum accusamus eligendi, nostrum, at maxime culpa nesciunt, fuga illo cupiditate earum sunt praesentium id obcaecati impedit natus nulla consectetur aliquam provident! Unde doloribus totam eum harum. Iste odio dicta nihil ipsam, consequatur libero reiciendis. Tempora quae placeat a maiores, doloribus aliquam recusandae mollitia earum perferendis beatae unde, dignissimos nesciunt, illo cupiditate non consequuntur nulla corporis aperiam delectus qui consectetur sint corrupti asperiores. Consequatur, atque quibusdam ratione impedit enim quisquam, reiciendis possimus voluptates explicabo perferendis, eaque blanditiis tempore sit! Quis optio earum rerum quam tempora sed vitae iure commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus reprehenderit ipsum accusamus eligendi, nostrum, at maxime culpa nesciunt, fuga illo cupiditate earum sunt praesentium id obcaecati impedit natus nulla consectetur aliquam provident! Unde doloribus totam eum harum. Iste odio dicta nihil ipsam, consequatur libero reiciendis. Tempora quae placeat a maiores, doloribus aliquam recusandae mollitia earum perferendis beatae unde, dignissimos nesciunt, illo cupiditate non consequuntur nulla corporis aperiam delectus qui consectetur sint corrupti asperiores. Consequatur, atque quibusdam ratione impedit enim quisquam, reiciendis possimus voluptates explicabo perferendis, eaque blanditiis tempore sit! Quis optio earum rerum quam tempora sed vitae iure commodi
+                    </textarea>
+                    <div class="agreement">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">약관에 동의합니다</label>
+                    </div>
+
+                    <h2>MEMBER INFORMATION</h2>
+                    <table>
+                        <caption class="hidden">회원정보 입력양식 테이블</caption>
+
+                        <tr>
+                            <th scope="row"><label for="id">USER ID</label> </th>
+                            <td>
+                                <input type="text" name="id" id="id" placeholder="아이디를 입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd">PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">HOBBY</th>
+                            <td>
+                                <label for="game">
+                                    <input type="checkbox" name="hobby" id="game" value="game">
+                                    GAME
+                                </label>
+                                <label for="music">
+                                    <input type="checkbox" name="hobby" id="music" value="music">
+                                    MUSIC
+                                </label>
+                                <label for="reading">
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">
+                                    READING
+                                </label>
+                                <p class="hobbyTxt">취미를 하나이상 선택해 주세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">GENDER</th>
+                            <td>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    MALE
+                                </label>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    FEMALE
+                                </label>
+                                <p class="genderTxt">성별을 선택해 주세요.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="email">E-MAIL</label></th>
+                            <td>
+                                <input type="text" name="email" id="email" placeholder="이메일주소를 입력해 주세요">
+                                <select name="company" id="company">
+                                    <option value="naver">@naver.com</option>
+                                    <option value="nate">@nate.com</option>
+                                    <option value="daum">@daum.net</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="comments">COMMENTS</label></th>
+                            <td>
+                                <textarea name="comments" id="comments" placeholder="코멘트를 입력해 주세요" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="reset" value="CANCEL">
+                                <input type="submit" value="SUBMIT">
+                            </th>                            
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+
+
+
+        </div>
     </section>
 
     <footer id="footer_sub">
