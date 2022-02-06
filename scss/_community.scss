@@ -171,7 +171,7 @@
 
 
         .conCommunity{
-            border: 1px solid red;
+            //border: 1px solid red;
 
             .wrap{
                 display:flex; 
@@ -181,9 +181,10 @@
                     width:30%;
                     background:#efefef;
                     padding:30px 20px;
-                    display:flex;
+                    display:flex; justify-content:space-between;
 
                     .txt{
+                        width:50%;
 
                         >h2{
                             display:block;
@@ -193,13 +194,16 @@
                         }
                         p{
                             display:block;
-                            font:16px/1 'Poppins'; 
+                            font:16px/1.5 'Poppins'; 
                             color:#333;
-                            padding-right:50%;
                         }
                     }
                     .pic{
                         width:120px; height:120px;
+
+                        border: 1px solid red;
+
+                        &:nth-of-type(1){ background-color:#fff8bd; }
                         
                         img{
                             width:80px; height:80px;

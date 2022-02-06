@@ -652,9 +652,6 @@ table {
   border-color: #ddd;
   font-weight: bold;
 }
-.community .inner .conCommunity {
-  border: 1px solid red;
-}
 .community .inner .conCommunity .wrap {
   display: flex;
   justify-content: space-between;
@@ -664,6 +661,10 @@ table {
   background: #efefef;
   padding: 30px 20px;
   display: flex;
+  justify-content: space-between;
+}
+.community .inner .conCommunity .wrap a .txt {
+  width: 50%;
 }
 .community .inner .conCommunity .wrap a .txt > h2 {
   display: block;
@@ -673,13 +674,16 @@ table {
 }
 .community .inner .conCommunity .wrap a .txt p {
   display: block;
-  font: 16px/1 "Poppins";
+  font: 16px/1.5 "Poppins";
   color: #333;
-  padding-right: 50%;
 }
 .community .inner .conCommunity .wrap a .pic {
   width: 120px;
   height: 120px;
+  border: 1px solid red;
+}
+.community .inner .conCommunity .wrap a .pic:nth-of-type(1) {
+  background-color: #fff8bd;
 }
 .community .inner .conCommunity .wrap a .pic img {
   width: 80px;
