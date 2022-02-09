@@ -587,9 +587,11 @@ $mobile: 539px;
 
     .inner{
         width:1180px; //
-        height:600px; // 
+        //height:600px; // 
         margin:0 auto;
         position:relative;
+
+        overflow:hidden;
 
         h1{
             font:bold 40px/45px 'Poppins';
@@ -599,16 +601,20 @@ $mobile: 539px;
         }
 
         .arrow{
-            .left{
-                position:absolute; top:36px; right:75px;
+            position:relative;
+
+            .swiper-button-prev{
+                left:auto; top:auto; right:60px; bottom:5px; 
                 i{
                     font-size:30px;
                     color:#6475F5;
                     opacity:0.6;
                 }
             }
-            .right{
-                position:absolute; top:36px; right:0;
+            .swiper-button-next{
+                //width: 50px; height: 50px;
+                left:auto; top:auto; right:0%; bottom:5px; 
+                
                 i{
                     font-size:30px;
                     color:#6475F5;
@@ -617,59 +623,55 @@ $mobile: 539px;
             }
         }
 
-        .wrap{
+        .swiper{
             width:100%;
-            height:440px;
-            
-            article{
-                width:580px;
-                height:100%;
-                margin-right:20px;
-                float:left;
-                padding:47px;
-                background:#6475F5;
-                //position:relative;
+            height:460px;
 
-                &:last-of-type {
-                    margin-right: 0px;
-                }
+            .swiper-wrapper{
 
-                i{
-                    font-size:55px;
-                    color:#fff;
-                    margin-bottom:40px;
-                }
+                .swiper-slide{
+                    float:left;
+                    padding:46px;
+                    background:#6475F5;
+                    //position:relative;
 
-                h2{
-                    font: 25px/36px "Poppins";
-                    color: #eee;
-                    margin-bottom: 36px;
-                }
-                p{
-                    font: 15px/22px "Poppins";
-                    color: #eee;
-                    margin-bottom:36px;
-                }
-
-                .peo{
-                    width:486px;
-                    height:55px;
-                    position:absolute; bottom:0px;
-
-                    img{
-                        width:55px;
-                        height:100%;
-                        border-radius:50%;
-                        margin-right:16px;
-                        float:left;
+                    i{
+                        font-size:55px;
+                        color:#fff;
+                        margin-bottom:36px;
                     }
-                    >p{
-                        font:12px/22px "Poppins";
-                        color: #eee;
-                        float:left;
 
-                        span{
-                            font:16px/1 "Poppins";
+                    h2{
+                        font: 25px/36px "Poppins";
+                        color: #eee;
+                        margin-bottom: 36px;
+                    }
+                    p{
+                        font: 15px/22px "Poppins";
+                        color: #eee;
+                        margin-bottom:36px;
+                    }
+
+                    .peo{
+                        width:486px;
+                        height:55px;
+                        position:absolute; bottom:30px;
+
+                        img{
+                            width:55px;
+                            height:100%;
+                            border-radius:50%;
+                            margin-right:16px;
+                            float:left;
+                        }
+                        >p{
+                            font:12px/22px "Poppins";
+                            color: #eee;
+                            float:left;
+
+                            span{
+                                font:16px/1 "Poppins";
+                            }
                         }
                     }
                 }
@@ -928,63 +930,11 @@ $mobile: 539px;
         padding: 80px 30px;
     
         .inner{
-            width:100%; //
-            height:100vh; // 
+            width:100%; 
 
-            .arrow{
-                .left{
-            //         position:absolute; top:36px; right:75px;
-            //         i{
-            //             font-size:30px;
-            //             color:#6475F5;
-            //             opacity:0.6;
-            //         }
-            //     }
-            //     .right{
-            //         position:absolute; top:36px; right:0;
-            //         i{
-            //             font-size:30px;
-            //             color:#6475F5;
-            //             opacity:0.6;
-            //         }
-                }
-            } ///수정전
-    
-            .wrap{
-                //height:440px;
-
-                border:1px solid red;
-                
-                article{
-                    width:100%;
-                    margin-right:0px;
-
-
-                    float:left;
-                    // padding:47px;
-                    // background:#6475F5;
-                    // //position:relative;
-    
-                  
-    
-
-                    i{
-                        font-size:40px;
-                        margin-bottom:30px;
-                    }
-    
-
-                    .peo{
-                    //     width:100%;
-                    //     //height:55px;
-                    //     position:absolute; bottom:30px;
-                    } ///수정전
-                }
-            }
+            .swiper{ height:480px; }
         }
-    } // 수정중
-    
-
+    }
 
     #sub{
         padding:80px 30px;

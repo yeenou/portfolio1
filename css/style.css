@@ -1908,9 +1908,9 @@ figure.pop .btnClose {
 }
 #say .inner {
   width: 1180px;
-  height: 600px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 #say .inner h1 {
   font: bold 40px/45px "Poppins";
@@ -1918,75 +1918,74 @@ figure.pop .btnClose {
   color: #333;
   margin-bottom: 90px;
 }
-#say .inner .arrow .left {
-  position: absolute;
-  top: 36px;
-  right: 75px;
+#say .inner .arrow {
+  position: relative;
 }
-#say .inner .arrow .left i {
+#say .inner .arrow .swiper-button-prev {
+  left: auto;
+  top: auto;
+  right: 60px;
+  bottom: 5px;
+}
+#say .inner .arrow .swiper-button-prev i {
   font-size: 30px;
   color: #6475F5;
   opacity: 0.6;
 }
-#say .inner .arrow .right {
-  position: absolute;
-  top: 36px;
-  right: 0;
+#say .inner .arrow .swiper-button-next {
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 5px;
 }
-#say .inner .arrow .right i {
+#say .inner .arrow .swiper-button-next i {
   font-size: 30px;
   color: #6475F5;
   opacity: 0.6;
 }
-#say .inner .wrap {
+#say .inner .swiper {
   width: 100%;
-  height: 440px;
+  height: 460px;
 }
-#say .inner .wrap article {
-  width: 580px;
-  height: 100%;
-  margin-right: 20px;
+#say .inner .swiper .swiper-wrapper .swiper-slide {
   float: left;
-  padding: 47px;
+  padding: 46px;
   background: #6475F5;
 }
-#say .inner .wrap article:last-of-type {
-  margin-right: 0px;
-}
-#say .inner .wrap article i {
+#say .inner .swiper .swiper-wrapper .swiper-slide i {
   font-size: 55px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
-#say .inner .wrap article h2 {
+#say .inner .swiper .swiper-wrapper .swiper-slide h2 {
   font: 25px/36px "Poppins";
   color: #eee;
   margin-bottom: 36px;
 }
-#say .inner .wrap article p {
+#say .inner .swiper .swiper-wrapper .swiper-slide p {
   font: 15px/22px "Poppins";
   color: #eee;
   margin-bottom: 36px;
 }
-#say .inner .wrap article .peo {
+#say .inner .swiper .swiper-wrapper .swiper-slide .peo {
   width: 486px;
   height: 55px;
   position: absolute;
-  bottom: 0px;
+  bottom: 30px;
 }
-#say .inner .wrap article .peo img {
+#say .inner .swiper .swiper-wrapper .swiper-slide .peo img {
   width: 55px;
   height: 100%;
   border-radius: 50%;
   margin-right: 16px;
   float: left;
 }
-#say .inner .wrap article .peo > p {
+#say .inner .swiper .swiper-wrapper .swiper-slide .peo > p {
   font: 12px/22px "Poppins";
   color: #eee;
   float: left;
 }
-#say .inner .wrap article .peo > p span {
+#say .inner .swiper .swiper-wrapper .swiper-slide .peo > p span {
   font: 16px/1 "Poppins";
 }
 
@@ -2214,20 +2213,11 @@ figure.pop .btnClose {
   }
   #say .inner {
     width: 100%;
-    height: 100vh;
   }
-  #say .inner .wrap {
-    border: 1px solid red;
+  #say .inner .swiper {
+    height: 480px;
   }
-  #say .inner .wrap article {
-    width: 100%;
-    margin-right: 0px;
-    float: left;
-  }
-  #say .inner .wrap article i {
-    font-size: 40px;
-    margin-bottom: 30px;
-  }
+
   #sub {
     padding: 80px 30px;
   }

@@ -209,34 +209,40 @@
         <div class="inner">
             <h1>We our customers <br>
             are saying</h1>
+
             <div class="arrow">
-                <a href="#" class="left"><i class="fas fa-arrow-left"></i></a>
-                <a href="#" class="right"><i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="swiper-button-prev"><i class="fas fa-arrow-left"></i></a>
+                <a href="#" class="swiper-button-next"><i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="wrap">
-                <article>
-                    <i class="fas fa-quote-left"></i>
-                    <h2>The results given are very <br> 
-                        satisfying</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eius officiis iusto maxime aliquam voluptatem nam voluptatibus culpa obchfcati modi, incidunt, earum neque animi vero!</p>
-                    <div class="peo">
-                        <img src="img/member6.jpg" alt="">
-                        <p><span>Rolph Edwards</span><br>
-                            Product Manager</p>
+
+            <!-- swiper -->
+            <div class="swiper saySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <i class="fas fa-quote-left"></i>
+                        <h2>The results given are very <br> 
+                            satisfying</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eius officiis iusto maxime aliquam voluptatem nam voluptatibus culpa obchfcati modi, incidunt, earum neque animi vero!</p>
+                        <div class="peo">
+                            <img src="img/member6.jpg" alt="">
+                            <p><span>Rolph Edwards</span><br>
+                                Product Manager</p>
+                        </div>
                     </div>
-                </article>
-                <article>
-                    <i class="fas fa-quote-left"></i>
-                    <h2>The service provided is very <br> 
-                        good and friendly</h2>
-                    <p>Lorem ipsum dolor sit amet elit. Laboriosam eum repellendus sint dolorem ipsa facere esse? Velit nobis aut hic rem veniam quod harum. Ducimus illo ut molestiae expedit asint dolorem?</p>
-                    <div class="peo">
-                        <img src="img/member2.jpg" alt="">
-                        <p><span>Legtle Aloksnder</span><br>
-                            Designer</p>
+                    <div class="swiper-slide">
+                        <i class="fas fa-quote-left"></i>
+                        <h2>The service provided is very <br> 
+                            good and friendly</h2>
+                        <p>Lorem ipsum dolor sit amet elit. Laboriosam eum repellendus sint dolorem ipsa facere esse? Velit nobis aut hic rem veniam quod harum. Ducimus illo ut molestiae expedit asint dolorem?</p>
+                        <div class="peo">
+                            <img src="img/member2.jpg" alt="">
+                            <p><span>Legtle Aloksnder</span><br>
+                                Designer</p>
+                        </div>
                     </div>
-                </article>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -303,8 +309,9 @@
     </footer>
 
 
-<!-- visual swiper -->
+
 <script>
+    //visual swiper
     var swiper = new Swiper(".visualSwiper", {
 
         //spaceBetween: 30,
@@ -324,14 +331,10 @@
              prevEl: ".visual-button-prev",
         },
     });
-</script>  
 
 
 
-
-
-<!-- slide swiper -->
-<script>
+    // slide swiper
     var swiper = new Swiper("#slide", {
         slidesPerView: 1,
         //centeredSlides: true,
@@ -358,6 +361,28 @@
             },
         },
     });
+
+
+    //saySwiper
+    var swiper = new Swiper(".saySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        // slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints:{
+            1179:{  // 1179xp 이상?
+                slidesPerView: 2,
+            },
+        },
+
+    });
+
 </script>
 
 
