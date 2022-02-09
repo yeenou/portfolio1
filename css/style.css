@@ -942,13 +942,18 @@ aside .close {
 }
 .location .Contact {
   width: 100%;
-  padding: 80px;
+  padding: 80px 0;
+  position: relative;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background: #fff;
+  margin-bottom: 80px;
 }
 .location .Contact .txt {
   width: 50%;
   padding-right: 50px;
+  position: relative;
 }
 .location .Contact .txt h2 {
   font: bold 36px/40px "Poppins";
@@ -979,6 +984,7 @@ aside .close {
 .location .Contact .message {
   width: 50%;
   padding: 50px;
+  position: relative;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .location .Contact .message h4 {
@@ -1027,18 +1033,15 @@ aside .close {
 .location .mapAddress {
   width: 90%;
   padding: 50px 100px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .location .mapAddress p {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .location .mapAddress .branch {
   display: flex;
   justify-content: space-around;
-}
-.location .mapAddress .branch li {
-  margin-left: 10px;
 }
 .location .mapAddress .branch li a {
   display: block;
@@ -1056,6 +1059,7 @@ aside .close {
 .location .trans {
   width: 100%;
   padding: 80px 0;
+  margin-bottom: 80px;
 }
 .location .trans article {
   width: 100%;
@@ -1092,6 +1096,30 @@ aside .close {
   color: #aaa;
 }
 
+/*tablet -------------------------------------*/
+@media screen and (max-width: 1179px) {
+  .location .Contact .txt {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 60px;
+  }
+  .location .Contact .message {
+    width: 100%;
+  }
+  .location .mapAddress {
+    width: 100%;
+    padding: 50px 50px;
+  }
+  .location .mapAddress .branch li {
+    margin-right: 20px;
+  }
+  .location .mapAddress .branch li:last-child {
+    margin-right: 0;
+  }
+  .location .mapAddress .branch li a {
+    width: 150px;
+  }
+}
 .youtube .sub_visual {
   background: url(../img/sub4.jpg) no-repeat center/cover fixed;
 }
