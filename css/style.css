@@ -502,6 +502,55 @@ table {
 }
 .community > .inner {
   padding-bottom: 100px;
+  /*
+  .conCommunity{
+      //border: 1px solid red;
+
+      .wrap{
+          display:flex; 
+          justify-content:space-between;
+
+          a{
+              width:30%;
+              background:#f9f9f9;
+              padding:30px 20px;
+              display:flex; justify-content:space-between;
+
+              .txt{
+                  width:50%;
+
+                  >h2{
+                      display:block;
+                      font:bold 28px/1.2 'Poppins'; 
+                      color:#000;
+                      margin-bottom:16px;
+                  }
+                  p{
+                      display:block;
+                      font:16px/1.5 'Poppins'; 
+                      color:#515151;
+                  }
+              }
+              .icon{
+                  position:relative;
+                  width:120px; height:120px;
+
+                  //&:nth-of-type(1){ background-color:#fcdcdc; }
+                  &:nth-of-type(2){ background-color:#fff8bd; }
+                  //&:nth-of-type(3){ background-color:#fed6bd; }
+
+                  img{
+                      width:70px; height:70px; 
+                      position: absolute;
+                      top: 50%; left: 50%;
+                      transform: translate(-50%, -50%);
+                      box-shadow:5px 5px 10px -2px;
+                  }
+              }
+          }
+      }
+  }
+  */
 }
 .community > .inner > h1 {
   padding: 40px;
@@ -652,48 +701,6 @@ table {
   border-color: #ddd;
   font-weight: bold;
 }
-.community > .inner .conCommunity .wrap {
-  display: flex;
-  justify-content: space-between;
-}
-.community > .inner .conCommunity .wrap a {
-  width: 30%;
-  background: #f9f9f9;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.community > .inner .conCommunity .wrap a .txt {
-  width: 50%;
-}
-.community > .inner .conCommunity .wrap a .txt > h2 {
-  display: block;
-  font: bold 28px/1.2 "Poppins";
-  color: #000;
-  margin-bottom: 16px;
-}
-.community > .inner .conCommunity .wrap a .txt p {
-  display: block;
-  font: 16px/1.5 "Poppins";
-  color: #515151;
-}
-.community > .inner .conCommunity .wrap a .icon {
-  position: relative;
-  width: 120px;
-  height: 120px;
-}
-.community > .inner .conCommunity .wrap a .icon:nth-of-type(2) {
-  background-color: #fff8bd;
-}
-.community > .inner .conCommunity .wrap a .icon img {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 5px 5px 10px -2px;
-}
 
 .gallery .sub_visual {
   background: url(../img/sub2.jpg) no-repeat center/cover fixed;
@@ -833,6 +840,9 @@ aside .close {
 }
 .join .sub_visual .inner h1 {
   color: #fff;
+}
+.join .inner {
+  padding-bottom: 80px;
 }
 .join .inner h2 {
   font: bold 18px/1 "arial";
