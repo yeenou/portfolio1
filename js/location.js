@@ -23,7 +23,7 @@ var markerOptions =[
     {
         title:"본점", 
         latlng : new kakao.maps.LatLng(37.50711796614849,126.7564159502457),
-        imgSrc : 'img/maps.png', 
+        imgSrc : 'img/marker.png', 
         imgSize : new kakao.maps.Size(99,99), 
         imgPos : {offset: new kakao.maps.Point(116, 99)},
         button : branch_btns[0]
@@ -31,7 +31,7 @@ var markerOptions =[
     {
         title:"지점1", 
         latlng : new kakao.maps.LatLng(33.450701, 126.570667),
-        imgSrc : 'img/maps.png', 
+        imgSrc : 'img/marker.png', 
         imgSize : new kakao.maps.Size(99,99), 
         imgPos : {offset: new kakao.maps.Point(116, 99)},
         button : branch_btns[1]
@@ -39,7 +39,7 @@ var markerOptions =[
     {
         title:"지점2", 
         latlng : new kakao.maps.LatLng(37.557527,126.9222836),
-        imgSrc : 'img/maps.png', 
+        imgSrc : 'img/marker.png', 
         imgSize : new kakao.maps.Size(99,99), 
         imgPos : {offset: new kakao.maps.Point(116, 99)}, 
         button : branch_btns[2]
