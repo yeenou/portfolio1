@@ -15,8 +15,6 @@
             margin-bottom:50px;
         }
 
-
-
         #tab{
             width:100%; 
             margin: 0 auto;
@@ -52,34 +50,44 @@
             }
 
             dd{
-                display:block;
                 width:100%; 
                 background:#fff; 
                 text-align:center; 
-        
-                #searchBox{
-                    width:100%; padding:30px 0; 
-                    font-size:0; 
-                    text-align: right;
-            
-                    #search{
-                        width:200px; height:30px; 
-                        border:1px solid #ddd; 
-                        padding-left:10px; 
-                        margin-left:10px; 
-                    }
-                    .btnSearch{
-                        width:30px; height:30px; 
-                        background:#fff; 
-                        font:bold 12px/30px 'arial'; color:#000; 
-                        text-align:center; 
-                        border:1px solid #ddd; 
-                        cursor:pointer; 
-                        margin-left:10px; 
-                        vertical-align:top; 
-                    }
-                }
+                display:none; 
+
+                a{
+                    #searchBox{
+                        width:100%; padding:30px 0; 
+                        font-size:0; 
+                        text-align: right;
                 
+                        #search{
+                            width:200px; height:30px; 
+                            border:1px solid #ddd; 
+                            padding-left:10px; 
+                            margin-left:10px; 
+                        }
+                        .btnSearch{
+                            width:30px; height:30px; 
+                            background:#fff; 
+                            font:bold 12px/30px 'arial'; color:#000; 
+                            text-align:center; 
+                            border:1px solid #ddd; 
+                            cursor:pointer; 
+                            margin-left:10px; 
+                            vertical-align:top; 
+                        }
+                    }
+                 }
+
+                &.on{
+                    display:block; 
+                }
+            }
+
+            .tabNotice, .tabInq{
+                width:100%;
+
                 table{
                     width:100%; 
                     //border-bottom:2px solid #111; 
@@ -108,6 +116,7 @@
         
                             &:nth-of-type(2){ text-align:left; }
                             &:nth-of-type(3){ font-family:"맑은 고딕"; }
+
                             a{
                                 color:#333; font-family:"arial"; line-height:1.4; 
                             }
@@ -167,58 +176,83 @@
                     }
                 }
             }
-        }
+            .tabFaq{
+                width:100%;
 
+                ul{
+                    width:100%;
+                    margin-bottom:50px;
+                    border-top:2px solid #111; 
 
-        /*
-        .conCommunity{
-            //border: 1px solid red;
-
-            .wrap{
-                display:flex; 
-                justify-content:space-between;
-
-                a{
-                    width:30%;
-                    background:#f9f9f9;
-                    padding:30px 20px;
-                    display:flex; justify-content:space-between;
-
-                    .txt{
-                        width:50%;
-
-                        >h2{
-                            display:block;
-                            font:bold 28px/1.2 'Poppins'; 
-                            color:#000;
-                            margin-bottom:16px;
-                        }
-                        p{
-                            display:block;
-                            font:16px/1.5 'Poppins'; 
-                            color:#515151;
-                        }
-                    }
-                    .icon{
+                    li{
+                        width:100%;
+                        //padding:20px;
+                        display:block;
                         position:relative;
-                        width:120px; height:120px;
+                        border-bottom: 1px solid #ddd;
 
-                        //&:nth-of-type(1){ background-color:#fcdcdc; }
-                        &:nth-of-type(2){ background-color:#fff8bd; }
-                        //&:nth-of-type(3){ background-color:#fed6bd; }
+                        //font: bold 20px/1 'arial'; color:#555;
+                        transition:0.5s;
+
+                        &::after{ content:''; display:block; clear:both; } 
+
+                        .ques{
+                            width: 100%; height:60px; 
+                            padding:20px;
+
+                            .plus{}
+                        }
+
+                        .answer{
+                            display:none;
+                            width:100%; padding:20px; 
+                            background:#eee;
+
+                            .minus{}
+                        }
+
+                        >div{
+                            span{
+                                width:30px; height:30px;
+                                float: left;
+                                padding:3px; 
+                                margin-right:20px;
+                                //background:#fff;
+                                color:#333; 
+                            }
+                            p{
+                                width:80%;
+                                padding-left: 20px;
+                                text-align:left;
+                                vertical-align: middle;
+                            }
+                            a{
+                                display:block;
+                                i{ 
+                                    float: right;
+                                    vertical-align: middle;
+                                    font-size:20px; 
+                                    color:#555;
+                                 }
+                            }
+                        }
                         
-                        img{
-                            width:70px; height:70px; 
-                            position: absolute;
-                            top: 50%; left: 50%;
-                            transform: translate(-50%, -50%);
-                            box-shadow:5px 5px 10px -2px;
+                        
+                        
+                        
+
+                        &.on{
+                            background:#aaa;
+                            color:#eee;
+                            
+                            
+
                         }
                     }
                 }
             }
+
         }
-        */
     }
 }
 

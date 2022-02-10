@@ -13,9 +13,6 @@ dts_a.forEach((el, index)=>{
    })
 })
 
-
-
-
 //dt의 갯수만큼 반복을 돌면서 dt에 이벤트를 바인딩 
 dts.forEach((dt, index)=>{
 
@@ -33,7 +30,6 @@ dts.forEach((dt, index)=>{
       activation(dds, index); 
    });
 });
-
 
 //활성화 함수 정의
 //반복을 돌면서 모든 dt,dd에 on을 제거하고 

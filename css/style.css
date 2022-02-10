@@ -609,57 +609,6 @@ table {
 .community .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
-.community .inner {
-  /*
-  .conCommunity{
-      //border: 1px solid red;
-
-      .wrap{
-          display:flex; 
-          justify-content:space-between;
-
-          a{
-              width:30%;
-              background:#f9f9f9;
-              padding:30px 20px;
-              display:flex; justify-content:space-between;
-
-              .txt{
-                  width:50%;
-
-                  >h2{
-                      display:block;
-                      font:bold 28px/1.2 'Poppins'; 
-                      color:#000;
-                      margin-bottom:16px;
-                  }
-                  p{
-                      display:block;
-                      font:16px/1.5 'Poppins'; 
-                      color:#515151;
-                  }
-              }
-              .icon{
-                  position:relative;
-                  width:120px; height:120px;
-
-                  //&:nth-of-type(1){ background-color:#fcdcdc; }
-                  &:nth-of-type(2){ background-color:#fff8bd; }
-                  //&:nth-of-type(3){ background-color:#fed6bd; }
-
-                  img{
-                      width:70px; height:70px; 
-                      position: absolute;
-                      top: 50%; left: 50%;
-                      transform: translate(-50%, -50%);
-                      box-shadow:5px 5px 10px -2px;
-                  }
-              }
-          }
-      }
-  }
-  */
-}
 .community .inner > h1 {
   padding: 40px;
   text-align: center;
@@ -711,25 +660,25 @@ table {
   color: #fff;
 }
 .community .inner #tab dd {
-  display: block;
   width: 100%;
   background: #fff;
   text-align: center;
+  display: none;
 }
-.community .inner #tab dd #searchBox {
+.community .inner #tab dd a #searchBox {
   width: 100%;
   padding: 30px 0;
   font-size: 0;
   text-align: right;
 }
-.community .inner #tab dd #searchBox #search {
+.community .inner #tab dd a #searchBox #search {
   width: 200px;
   height: 30px;
   border: 1px solid #ddd;
   padding-left: 10px;
   margin-left: 10px;
 }
-.community .inner #tab dd #searchBox .btnSearch {
+.community .inner #tab dd a #searchBox .btnSearch {
   width: 30px;
   height: 30px;
   background: #fff;
@@ -741,53 +690,59 @@ table {
   margin-left: 10px;
   vertical-align: top;
 }
-.community .inner #tab dd table {
+.community .inner #tab dd.on {
+  display: block;
+}
+.community .inner #tab .tabNotice, .community .inner #tab .tabInq {
+  width: 100%;
+}
+.community .inner #tab .tabNotice table, .community .inner #tab .tabInq table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 50px;
 }
-.community .inner #tab dd table tr:hover {
+.community .inner #tab .tabNotice table tr:hover, .community .inner #tab .tabInq table tr:hover {
   background: #eee;
 }
-.community .inner #tab dd table tr th {
+.community .inner #tab .tabNotice table tr th, .community .inner #tab .tabInq table tr th {
   padding: 15px;
   background: #f9f9f9;
   color: #333;
   border-top: 3px solid #777;
 }
-.community .inner #tab dd table tr th:nth-of-type(1) {
+.community .inner #tab .tabNotice table tr th:nth-of-type(1), .community .inner #tab .tabInq table tr th:nth-of-type(1) {
   width: 10%;
 }
-.community .inner #tab dd table tr th:nth-of-type(3) {
+.community .inner #tab .tabNotice table tr th:nth-of-type(3), .community .inner #tab .tabInq table tr th:nth-of-type(3) {
   width: 15%;
 }
-.community .inner #tab dd table tr th:nth-of-type(4) {
+.community .inner #tab .tabNotice table tr th:nth-of-type(4), .community .inner #tab .tabInq table tr th:nth-of-type(4) {
   width: 15%;
 }
-.community .inner #tab dd table tr td {
+.community .inner #tab .tabNotice table tr td, .community .inner #tab .tabInq table tr td {
   padding: 20px;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
-.community .inner #tab dd table tr td:nth-of-type(2) {
+.community .inner #tab .tabNotice table tr td:nth-of-type(2), .community .inner #tab .tabInq table tr td:nth-of-type(2) {
   text-align: left;
 }
-.community .inner #tab dd table tr td:nth-of-type(3) {
+.community .inner #tab .tabNotice table tr td:nth-of-type(3), .community .inner #tab .tabInq table tr td:nth-of-type(3) {
   font-family: "맑은 고딕";
 }
-.community .inner #tab dd table tr td a {
+.community .inner #tab .tabNotice table tr td a, .community .inner #tab .tabInq table tr td a {
   color: #333;
   font-family: "arial";
   line-height: 1.4;
 }
-.community .inner #tab dd .pagination {
+.community .inner #tab .tabNotice .pagination, .community .inner #tab .tabInq .pagination {
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
 }
-.community .inner #tab dd .pagination .prev {
+.community .inner #tab .tabNotice .pagination .prev, .community .inner #tab .tabInq .pagination .prev {
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -796,7 +751,7 @@ table {
   line-height: 30px;
   background: #f9f9f9;
 }
-.community .inner #tab dd .pagination .next {
+.community .inner #tab .tabNotice .pagination .next, .community .inner #tab .tabInq .pagination .next {
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -805,13 +760,13 @@ table {
   line-height: 30px;
   background: #f9f9f9;
 }
-.community .inner #tab dd .pagination .numbers {
+.community .inner #tab .tabNotice .pagination .numbers, .community .inner #tab .tabInq .pagination .numbers {
   display: inline-block;
   text-align: center;
   font-size: 0;
   margin: 0 10px;
 }
-.community .inner #tab dd .pagination .numbers a {
+.community .inner #tab .tabNotice .pagination .numbers a, .community .inner #tab .tabInq .pagination .numbers a {
   border: 1px solid #fff;
   display: inline-block;
   width: 30px;
@@ -821,9 +776,67 @@ table {
   margin: 0 5px;
   transition: 0.5s;
 }
-.community .inner #tab dd .pagination .numbers a:hover {
+.community .inner #tab .tabNotice .pagination .numbers a:hover, .community .inner #tab .tabInq .pagination .numbers a:hover {
   border-color: #ddd;
   font-weight: bold;
+}
+.community .inner #tab .tabFaq {
+  width: 100%;
+}
+.community .inner #tab .tabFaq ul {
+  width: 100%;
+  margin-bottom: 50px;
+  border-top: 2px solid #111;
+}
+.community .inner #tab .tabFaq ul li {
+  width: 100%;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  transition: 0.5s;
+}
+.community .inner #tab .tabFaq ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.community .inner #tab .tabFaq ul li .ques {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+}
+.community .inner #tab .tabFaq ul li .answer {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  background: #eee;
+}
+.community .inner #tab .tabFaq ul li > div span {
+  width: 30px;
+  height: 30px;
+  float: left;
+  padding: 3px;
+  margin-right: 20px;
+  color: #333;
+}
+.community .inner #tab .tabFaq ul li > div p {
+  width: 80%;
+  padding-left: 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+.community .inner #tab .tabFaq ul li > div a {
+  display: block;
+}
+.community .inner #tab .tabFaq ul li > div a i {
+  float: right;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #555;
+}
+.community .inner #tab .tabFaq ul li.on {
+  background: #aaa;
+  color: #eee;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1984,27 +1997,26 @@ figure.pop .btnClose {
 #say .inner .arrow {
   position: relative;
 }
+#say .inner .arrow a {
+  font-size: 0;
+}
+#say .inner .arrow a i {
+  font-size: 30px;
+  color: #6475F5;
+  opacity: 0.6;
+  transition: 0.5s;
+}
 #say .inner .arrow .swiper-button-prev {
   left: auto;
   top: auto;
   right: 60px;
   bottom: 5px;
 }
-#say .inner .arrow .swiper-button-prev i {
-  font-size: 30px;
-  color: #6475F5;
-  opacity: 0.6;
-}
 #say .inner .arrow .swiper-button-next {
   left: auto;
   top: auto;
   right: 0%;
   bottom: 5px;
-}
-#say .inner .arrow .swiper-button-next i {
-  font-size: 30px;
-  color: #6475F5;
-  opacity: 0.6;
 }
 #say .inner .swiper {
   width: 100%;

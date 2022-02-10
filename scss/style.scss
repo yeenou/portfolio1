@@ -600,28 +600,26 @@ $mobile: 539px;
             margin-bottom:90px; //
         }
 
+
         .arrow{
             position:relative;
 
-            .swiper-button-prev{
-                
-                left:auto; top:auto; right:60px; bottom:5px; 
+            a{ 
+                font-size:0; 
+
                 i{
-                    
                     font-size:30px;
                     color:#6475F5;
                     opacity:0.6;
+                    transition:0.5s;
                 }
             }
+
+            .swiper-button-prev{
+                left:auto; top:auto; right:60px; bottom:5px;
+            }
             .swiper-button-next{
-                //width: 50px; height: 50px;
                 left:auto; top:auto; right:0%; bottom:5px; 
-                
-                i{
-                    font-size:30px;
-                    color:#6475F5;
-                    opacity:0.6;
-                }
             }
         }
 
