@@ -210,17 +210,29 @@ table {
 }
 .content .sub_visual {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background: #6475F5;
   margin-bottom: 100px;
 }
-.content .inner {
+.content .sub_visual .innerVisual {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.content .sub_visual .innerVisual h1 {
+  font: bold 50px/1 "Poppins";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px 0;
+}
+.content > .inner {
   width: 1180px;
   margin: 0 auto;
-}
-.content .inner h1 {
-  font: bold 50px/1 "Poppins";
-  padding: 100px 0;
+  position: relative;
 }
 
 #footer_sub {
@@ -287,6 +299,9 @@ table {
     display: block;
   }
 
+  .content .sub_visual .innerVisual {
+    width: 100%;
+  }
   .content .inner {
     width: 100%;
     padding: 80px 30px;
@@ -321,9 +336,6 @@ table {
 }
 .department .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
-}
-.department .sub_visual .inner h1 {
-  color: #fff;
 }
 
 .content {
@@ -597,11 +609,7 @@ table {
 .community .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
-.community .sub_visual .inner h1 {
-  color: #fff;
-}
-.community > .inner {
-  padding-bottom: 100px;
+.community .inner {
   /*
   .conCommunity{
       //border: 1px solid red;
@@ -652,60 +660,60 @@ table {
   }
   */
 }
-.community > .inner > h1 {
+.community .inner > h1 {
   padding: 40px;
   text-align: center;
 }
-.community > .inner > p {
+.community .inner > p {
   padding: 20px 300px;
   text-align: center;
   margin-bottom: 50px;
 }
-.community > .inner .tab {
+.community .inner .tab {
   margin-bottom: 50px;
 }
-.community > .inner .tab #tabMenu {
+.community .inner .tab #tabMenu {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.community > .inner .tab #tabMenu li {
+.community .inner .tab #tabMenu li {
   width: 33.3333333333%;
   border-right: 2px solid #ddd;
   border-bottom: 2px dashed #ddd;
   transition: 0.5s;
 }
-.community > .inner .tab #tabMenu li:last-child {
+.community .inner .tab #tabMenu li:last-child {
   border-right: none;
 }
-.community > .inner .tab #tabMenu li a {
+.community .inner .tab #tabMenu li a {
   display: block;
-  padding: 15px 50px;
+  padding: 15px 0px;
   font: bold 20px/1 "Poppins";
   color: #777;
   text-align: center;
   transition: 0.5s;
 }
-.community > .inner .tab #tabMenu li:hover {
+.community .inner .tab #tabMenu li:hover {
   background: linear-gradient(45deg, #6475F5, #76dbff);
 }
-.community > .inner .tab #tabMenu li:hover a {
+.community .inner .tab #tabMenu li:hover a {
   color: #fff;
 }
-.community > .inner #searchBox {
+.community .inner #searchBox {
   width: 100%;
   padding: 30px 0;
   font-size: 0;
   text-align: right;
 }
-.community > .inner #searchBox #search {
+.community .inner #searchBox #search {
   width: 200px;
   height: 30px;
   border: 1px solid #ddd;
   padding-left: 10px;
   margin-left: 10px;
 }
-.community > .inner #searchBox .btnSearch {
+.community .inner #searchBox .btnSearch {
   width: 30px;
   height: 30px;
   background: #fff;
@@ -717,53 +725,53 @@ table {
   margin-left: 10px;
   vertical-align: top;
 }
-.community > .inner table {
+.community .inner table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 50px;
 }
-.community > .inner table tr:hover {
+.community .inner table tr:hover {
   background: #eee;
 }
-.community > .inner table tr th {
+.community .inner table tr th {
   padding: 15px;
   background: #f9f9f9;
   color: #333;
   border-top: 3px solid #777;
 }
-.community > .inner table tr th:nth-of-type(1) {
+.community .inner table tr th:nth-of-type(1) {
   width: 10%;
 }
-.community > .inner table tr th:nth-of-type(3) {
+.community .inner table tr th:nth-of-type(3) {
   width: 15%;
 }
-.community > .inner table tr th:nth-of-type(4) {
+.community .inner table tr th:nth-of-type(4) {
   width: 15%;
 }
-.community > .inner table tr td {
+.community .inner table tr td {
   padding: 20px;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
-.community > .inner table tr td:nth-of-type(2) {
+.community .inner table tr td:nth-of-type(2) {
   text-align: left;
 }
-.community > .inner table tr td:nth-of-type(3) {
+.community .inner table tr td:nth-of-type(3) {
   font-family: "맑은 고딕";
 }
-.community > .inner table tr td a {
+.community .inner table tr td a {
   color: #333;
   font-family: "arial";
   line-height: 1.4;
 }
-.community > .inner .pagination {
+.community .inner .pagination {
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
 }
-.community > .inner .pagination .prev {
+.community .inner .pagination .prev {
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -772,7 +780,7 @@ table {
   line-height: 30px;
   background: #f9f9f9;
 }
-.community > .inner .pagination .next {
+.community .inner .pagination .next {
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -781,13 +789,13 @@ table {
   line-height: 30px;
   background: #f9f9f9;
 }
-.community > .inner .pagination .numbers {
+.community .inner .pagination .numbers {
   display: inline-block;
   text-align: center;
   font-size: 0;
   margin: 0 10px;
 }
-.community > .inner .pagination .numbers a {
+.community .inner .pagination .numbers a {
   border: 1px solid #fff;
   display: inline-block;
   width: 30px;
@@ -797,16 +805,49 @@ table {
   margin: 0 5px;
   transition: 0.5s;
 }
-.community > .inner .pagination .numbers a:hover {
+.community .inner .pagination .numbers a:hover {
   border-color: #ddd;
   font-weight: bold;
 }
 
+@media screen and (max-width: 1179px) {
+  .community .inner {
+    width: 100%;
+  }
+  .community .inner > p {
+    padding: 20px 0px;
+  }
+  .community .inner table tr th:nth-of-type(1) {
+    width: 15%;
+  }
+  .community .inner table tr th:nth-of-type(3) {
+    width: 20%;
+  }
+  .community .inner table tr th:nth-of-type(4) {
+    width: 0%;
+    display: none;
+  }
+  .community .inner table tr td:nth-of-type(4) {
+    display: none;
+  }
+  .community .inner .pagination .numbers a:nth-of-type(6) {
+    display: none;
+  }
+  .community .inner .pagination .numbers a:nth-of-type(7) {
+    display: none;
+  }
+  .community .inner .pagination .numbers a:nth-of-type(8) {
+    display: none;
+  }
+  .community .inner .pagination .numbers a:nth-of-type(9) {
+    display: none;
+  }
+  .community .inner .pagination .numbers a:nth-of-type(10) {
+    display: none;
+  }
+}
 .gallery .sub_visual {
   background: url(../img/sub2.jpg) no-repeat center/cover fixed;
-}
-.gallery .sub_visual .inner h1 {
-  color: #fff;
 }
 
 #gallery h2 {
@@ -938,12 +979,6 @@ aside .close {
 .join .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
-.join .sub_visual .inner h1 {
-  color: #fff;
-}
-.join .inner {
-  padding-bottom: 80px;
-}
 .join .inner h2 {
   font: bold 18px/1 "arial";
   color: #555;
@@ -1036,9 +1071,6 @@ aside .close {
 
 .location .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
-}
-.location .sub_visual .inner h1 {
-  color: #fff;
 }
 .location .Contact {
   width: 100%;
@@ -1222,9 +1254,6 @@ aside .close {
 }
 .youtube .sub_visual {
   background: url(../img/sub4.jpg) no-repeat center/cover fixed;
-}
-.youtube .sub_visual .inner h1 {
-  color: #fff;
 }
 
 .introYoutube {
