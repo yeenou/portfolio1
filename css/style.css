@@ -871,7 +871,7 @@ table {
   width: 80px;
   height: 30px;
   background: #6475F5;
-  font: bold 12px/30px "arial";
+  font: bold 12px/30px "Poppins";
   color: #fff;
   text-align: center;
   border: none;
@@ -894,57 +894,58 @@ table {
 #gallery #wrap .loading.off {
   opacity: 0;
 }
-#gallery #wrap #list {
+#gallery #wrap > #list {
   width: 100%;
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
 }
-#gallery #wrap #list.on {
+#gallery #wrap > #list.on {
   opacity: 1;
   transform: translateY(0px);
 }
-#gallery #wrap #list::after {
+#gallery #wrap > #list::after {
   content: "";
   display: block;
   clear: both;
 }
-#gallery #wrap #list li {
+#gallery #wrap > #list .item {
   float: left;
   width: 25%;
   padding: 20px;
 }
-#gallery #wrap #list li div {
+#gallery #wrap > #list .item div {
   width: 100%;
   padding: 0px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding-bottom: 20px;
 }
-#gallery #wrap #list li div a > img {
+#gallery #wrap > #list .item div a > img {
   width: 100%;
 }
-#gallery #wrap #list li div p {
-  font: 12px/1.2 "arial";
+#gallery #wrap > #list .item div p {
+  font: bold 12px/1.2 "Poppins";
   color: #777;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#gallery #wrap #list li div span {
+#gallery #wrap > #list .item div span {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
-#gallery #wrap #list li div span > img {
+#gallery #wrap > #list .item div span > img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 5px;
+  display: none;
 }
-#gallery #wrap #list li div span strong {
-  font: 11px/1 "arial";
+#gallery #wrap > #list .item div span strong {
+  font: 11px/1 "Poppins";
   color: #6475F5;
 }
 
@@ -976,6 +977,21 @@ aside .close {
   color: #fff;
 }
 
+@media screen and (max-width: 1179px) {
+  #gallery #wrap > #list .item {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 949px) {
+  #gallery #wrap > #list .item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 539px) {
+  #gallery #wrap > #list .item {
+    width: 100%;
+  }
+}
 .join .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
@@ -1689,17 +1705,17 @@ figure.pop .btnClose {
   z-index: 5;
 }
 
-#list {
+#serv {
   width: 100%;
   padding-top: 133px;
   padding-bottom: 157px;
 }
-#list .inner {
+#serv .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
 }
-#list .inner::after {
+#serv .inner::after {
   content: "";
   display: block;
   width: 110px;
@@ -1709,7 +1725,7 @@ figure.pop .btnClose {
   top: 45px;
   left: 0;
 }
-#list .inner h1 {
+#serv .inner h1 {
   width: 1020px;
   float: right;
   font: bold 40px/45px "Poppins";
@@ -1717,44 +1733,44 @@ figure.pop .btnClose {
   color: #333;
   margin-bottom: 110px;
 }
-#list .inner ul {
+#serv .inner ul {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-#list .inner ul li::after {
+#serv .inner ul li::after {
   content: "";
   display: block;
   clear: both;
 }
-#list .inner ul li {
+#serv .inner ul li {
   width: 380px;
   margin-right: 20px;
 }
-#list .inner ul li:last-of-type {
+#serv .inner ul li:last-of-type {
   margin-right: 0px;
 }
-#list .inner ul li .pic {
+#serv .inner ul li .pic {
   width: 80px;
   height: 100%;
   float: left;
   padding-right: 30px;
 }
-#list .inner ul li .pic img {
+#serv .inner ul li .pic img {
   width: 50px;
   height: 50px;
 }
-#list .inner ul li .txt {
+#serv .inner ul li .txt {
   width: 300px;
   height: 100%;
   float: left;
 }
-#list .inner ul li .txt h2 {
+#serv .inner ul li .txt h2 {
   font: bold 25px/1 "Poppins";
   color: #555;
   margin-bottom: 38px;
 }
-#list .inner ul li .txt p {
+#serv .inner ul li .txt p {
   font: 15px/22px "Poppins";
   color: #777;
 }
@@ -2161,29 +2177,29 @@ figure.pop .btnClose {
     display: none;
   }
 
-  #list {
+  #serv {
     padding: 100px 30px;
   }
-  #list .inner {
+  #serv .inner {
     width: 100%;
   }
-  #list .inner::after {
+  #serv .inner::after {
     width: 170px;
   }
-  #list .inner h1 {
+  #serv .inner h1 {
     width: 100%;
     float: left;
     line-height: 48px;
     margin-bottom: 60px;
   }
-  #list .inner ul {
+  #serv .inner ul {
     flex-direction: column;
     align-items: center;
   }
-  #list .inner ul li {
+  #serv .inner ul li {
     margin-bottom: 60px;
   }
-  #list .inner ul li:last-of-type {
+  #serv .inner ul li:last-of-type {
     margin-bottom: 0px;
   }
 

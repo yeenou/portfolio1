@@ -325,7 +325,7 @@ $mobile: 539px;
     }
 }
 
-#list{
+#serv{
     width:100%;
     padding-top:133px; padding-bottom:157px;
 
@@ -604,8 +604,10 @@ $mobile: 539px;
             position:relative;
 
             .swiper-button-prev{
+                
                 left:auto; top:auto; right:60px; bottom:5px; 
                 i{
+                    
                     font-size:30px;
                     color:#6475F5;
                     opacity:0.6;
@@ -846,7 +848,7 @@ $mobile: 539px;
         }
     }
 
-    #list{
+    #serv{
 		padding: 100px 30px;
     
         .inner{
