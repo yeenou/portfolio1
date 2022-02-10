@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 
-.hidden {
+.h {
   position: absolute;
   top: -9999px;
   opacity: 0;
@@ -996,7 +996,7 @@ aside .close {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
 .join .inner h2 {
-  font: bold 18px/1 "arial";
+  font: bold 18px/1 "Poppins";
   color: #555;
   margin-bottom: 20px;
 }
@@ -1005,7 +1005,7 @@ aside .close {
   height: 200px;
   resize: none;
   padding: 20px;
-  font: 12px/1.5 "arial";
+  font: 12px/1.5 "Poppins";
   color: #888;
   background: #eee;
   margin-bottom: 10px;
@@ -1019,70 +1019,57 @@ aside .close {
 }
 .join .inner table {
   width: 100%;
-  border-top: 2px solid #999;
-  border-bottom: 2px solid #999;
+  margin-bottom: 100px;
+}
+.join .inner table th, .join .inner table td {
+  padding: 15px 25px;
 }
 .join .inner table th {
   width: 20%;
-  text-align: left;
-  font: bold 14px/1 "arial";
-  color: #666;
-  padding: 20px 30px;
-  border-right: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  background: #eee;
+  text-align: right;
 }
-.join .inner table th:last-child {
-  background: #fff;
-  text-align: center;
-  border-right: none;
-}
-.join .inner table th input[type=submit], .join .inner table th input[type=reset] {
-  width: 150px;
+.join .inner table th input[type=reset], .join .inner table th input[type=submit] {
+  width: 200px;
   height: 40px;
   border: none;
-  background: #444;
-  font: bold 14px/1 "arial";
+  margin: 10px;
+  font: bold 14px/40px "Poppins";
+  color: #555;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.join .inner table th input[type=reset]:hover, .join .inner table th input[type=submit]:hover {
+  background: #555;
   color: #fff;
-  margin: 0 10px;
 }
-.join .inner table td {
-  border-bottom: 1px solid #bbb;
-  padding: 20px 30px;
+.join .inner table th input[type=submit] {
+  background: #6475F5;
+  color: #fff;
 }
-.join .inner table td input[type=text], .join .inner table td input[type=password] {
-  width: 30%;
-  height: 30px;
-  border: 1px solid #bbb;
-  background: #eeffff;
-  padding-left: 20px;
+.join .inner table th:last-child {
+  text-align: center;
 }
-.join .inner table td input[type=checkbox], .join .inner table td input[type=radio] {
-  margin-right: 5px;
+.join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #ddd;
 }
-.join .inner table td label {
+.join .inner table td input[type=radio], .join .inner table td input[type=checkbox] {
   margin-right: 30px;
 }
-.join .inner table td select#company {
-  width: 20%;
-  height: 30px;
-  border: 1px solid #bbb;
-  background: #eeffff;
-  padding-left: 20px;
-}
-.join .inner table td textarea#comments {
-  width: 80%;
-  height: 100px;
-  border: 1px solid #bbb;
-  background: #eeffff;
+.join .inner table td textarea {
   resize: none;
-  padding: 20px;
+  width: 60%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #ddd;
 }
-.join .inner table td .hobbyTxt, .join .inner table td .genderTxt {
-  font: 12px/1 "arial";
+.join .inner table td p {
+  font: 11px/1 "맑은 고딕";
   color: hotpink;
   margin-top: 10px;
-  display: none;
 }
 
 .location .sub_visual {
