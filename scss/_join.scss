@@ -90,3 +90,32 @@
     }
 
 }
+
+
+/*tablet -------------------------------------*/
+@media screen and (max-width: $tablet) {
+    .join{
+    
+        .inner{
+            table{
+                //margin-bottom:100px;
+    
+                th,td{
+                    //padding:15px 25px; 
+                }
+    
+                th{
+                    //width:20%; 
+                    text-align:center;
+                }
+                td{
+                    input[type=text], input[type=password],select{ width:80%; }
+
+                    input[type=radio], input[type=checkbox]{ margin-right:20px; }
+                    
+                    textarea{ width:80%; }
+                }
+            }
+        }
+    }
+}

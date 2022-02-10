@@ -1088,6 +1088,21 @@ aside .close {
   margin-top: 10px;
 }
 
+/*tablet -------------------------------------*/
+@media screen and (max-width: 1179px) {
+  .join .inner table th {
+    text-align: center;
+  }
+  .join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
+    width: 80%;
+  }
+  .join .inner table td input[type=radio], .join .inner table td input[type=checkbox] {
+    margin-right: 20px;
+  }
+  .join .inner table td textarea {
+    width: 80%;
+  }
+}
 .location .sub_visual {
   background: url(../img/sub1.jpg) no-repeat center/cover fixed;
 }
