@@ -1045,7 +1045,7 @@ aside .close {
   text-align: right;
 }
 .join .inner table th input[type=reset], .join .inner table th input[type=submit] {
-  width: 200px;
+  width: 170px;
   height: 40px;
   border: none;
   margin: 10px;
